@@ -1,0 +1,36 @@
+<section group="Footers" global once="footers" mbr-class="{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}">
+
+    <mbr-parameters>
+    <!-- Block parameters controls (Blue "Gear" panel) -->
+        <input type="range" inline title="Top" name="paddingTop" min="0" max="8" step="1" value="2">
+        <input type="range" inline title="Bottom" name="paddingBottom" min="0" max="8" step="1" value="2">
+        <input type="checkbox" title="Show Buttons" name="showButtons" checked>
+        <input type="checkbox" title="Reveal effect" name="reveal">
+        <fieldset type="background" name="bg" parallax>
+            <input type="image" title="Background Image" value="../_images/background2.jpg">
+            <input type="color" title="Background Color" value="#ffffff" selected>
+        </fieldset>
+        <input type="checkbox" title="Overlay" name="overlay" condition="bg.type !== 'color'" checked>
+        <input type="color" title="Overlay Color" name="overlayColor" value="#efefef" condition="overlay && bg.type !== 'color'">
+        <input type="range" inline title="Opacity" name="overlayOpacity" min="0" max="1" step="0.1" value="0.5" condition="overlay && bg.type !== 'color'">
+    <!-- End block parameters -->
+    </mbr-parameters>
+
+    <div class="mbr-overlay" mbr-if="overlay && bg.type !== 'color'" opacity="{{overlayOpacity}}" bg-color="{{overlayColor}}"></div>
+
+    <div class="container">
+        <div class="media-container-row align-center justify-content-center align-items-center">
+            <div class="section-text m-2">
+                <p class="mbr-text mbr-black mb-0 mbr-fonts-style"
+                   mbr-theme-style="display-7"
+                   data-app-selector=".media-container-row .mbr-text" 
+                   data-app-placeholder="Type Text">© Copyright 2017 Mobirise - All Rights Reserved</p>
+            </div>
+            <div mbr-buttons mbr-theme-style="display-4"
+                 class="mbr-section-btn align-center"
+                 mbr-if="showButtons" data-toolbar="-mbrBtnAdd,-mbrBtnMove">
+                <a href="https://mobirise.com" class="btn btn-primary">Let's try it!</a>
+            </div>
+        </div>
+    </div>
+</section>
