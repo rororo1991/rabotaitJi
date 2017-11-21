@@ -8,17 +8,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
   <title>Home</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
- <link rel="canonical" href="index.html">
- <style amp-custom>
+  
+ <style amp-custom> 
+/*!
+ * Mobirise v4 theme (https://mobirise.com/)
+ * Copyright 2017 Mobirise
+ */
+section {
+  background-color: #eeeeee; }
 
+section,
+.container,
+.container-fluid {
+  position: relative;
+  word-wrap: break-word; }
 
+a.mbr-iconfont:hover {
+  text-decoration: none; }
 
+.article .lead p, .article .lead ul, .article .lead ol, .article .lead pre, .article .lead blockquote {
+  margin-bottom: 0; }
 
+a {
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer; }
+  a, a:hover {
+    text-decoration: none; }
+
+figure {
+  margin-bottom: 0; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4 {
+  line-height: 1;
+  word-break: break-word;
+  word-wrap: break-word; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  padding: 10px 0 10px 20px;
+  position: relative;
+  border-left: 2px solid;
+  border-color: #ff3366; }
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  transition-delay: 9999s;
+  transition-property: background-color, color; }
+
+textarea[type="hidden"] {
+  display: none; }
+
+body {
+  position: relative; }
+
+section {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  section .mbr-background-video,
+  section .mbr-background-video-preview {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; }
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+@media (min-width: 576px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px; } }
+@media (min-width: 768px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px; } }
+@media (min-width: 992px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px; } }
+@media (min-width: 1200px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px; } }
+.hidden {
+  visibility: hidden; }
+
+.mbr-z-index20 {
+  z-index: 20; }
+
+/*! Base colors */
+.mbr-white {
+  color: #ffffff; }
+
+.mbr-black {
+  color: #000000; }
+
+.mbr-bg-white {
+  background-color: #ffffff; }
+
+.mbr-bg-black {
+  background-color: #000000; }
+
+/*! Text-aligns */
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+@media (max-width: 767px) {
+  .align-left, .align-center, .align-right, .mbr-section-btn, .mbr-section-title {
+    text-align: center; } }
+/*! Font-weight  */
+.mbr-light {
+  font-weight: 300; }
+
+.mbr-regular {
+  font-weight: 400; }
+
+.mbr-semibold {
+  font-weight: 500; }
+
+.mbr-bold {
+  font-weight: 700; }
+
+.mbr-figure img, .mbr-figure iframe {
+  display: block;
+  width: 100%; }
+
+.card {
+  background-color: transparent;
+  border: none; }
+
+.card-img {
+  text-align: center;
+  flex-shrink: 0; }
+
+.media {
+  max-width: 100%;
+  margin: 0 auto; }
+
+.mbr-figure {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  -webkit-align-self: center;
+  align-self: center; }
+
+.media-container > div {
+  max-width: 100%; }
+
+.mbr-figure img, .card-img img {
+  width: 100%; }
+
+@media (max-width: 991px) {
+  .media-size-item {
+    width: auto ; }
+
+  .media {
+    width: auto; }
+
+  .mbr-figure {
+    width: 100% ; } }
+/*! Buttons */
+.mbr-section-btn {
+  margin-left: -.25rem;
+  margin-right: -.25rem;
+  font-size: 0; }
+
+nav .mbr-section-btn {
+  margin-left: 0rem;
+  margin-right: 0rem; }
+
+/*! Btn icon margin */
+.btn .mbr-iconfont, .btn.btn-sm .mbr-iconfont {
+  cursor: pointer;
+  margin-right: 0.5rem; }
+
+.btn.btn-md .mbr-iconfont, .btn.btn-md .mbr-iconfont {
+  margin-right: 0.8rem; }
+
+[type="submit"] {
+  -webkit-appearance: none; }
+
+/*! Full-screen */
+.mbr-fullscreen .mbr-overlay {
+  min-height: 100vh; }
+
+.mbr-fullscreen {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+amp-img img {
+  max-height: 100%;
+  max-width: 100%; }
+
+.super-hide {
+  display: none ; }
+
+/*# sourceMappingURL=style.css.map */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
 body {
   font-family: Roboto;
   font-style: normal;
@@ -1054,56 +1272,34 @@ p {
 .is-builder amp-vimeo i-amphtml-sizer {
   position: static;
 }
-.cid-qBC9Pu2rNq {
+.cid-qBCzR2wOlg {
   background-image: url("assets/images/background3.jpg");
 }
-.cid-qBC9Pu2rNq h1,
-.cid-qBC9Pu2rNq h3 {
+.cid-qBCzR2wOlg h1,
+.cid-qBCzR2wOlg h3 {
   padding: 10px 0;
   line-height: 1.2;
   color: #676767;
 }
-.cid-qBC9Pu2rNq h3 {
+.cid-qBCzR2wOlg h3 {
   margin-bottom: 15px;
 }
-.cid-qBC9Pu2rNq p {
+.cid-qBCzR2wOlg p {
   color: #676767;
-}
-.cid-qBC9Qi3HBz {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #f1f1f1;
-}
-.cid-qBC9Qi3HBz h1,
-.cid-qBC9Qi3HBz h3,
-.cid-qBC9Qi3HBz p {
-  padding: 10px 0;
-  line-height: 1.2;
-}
-.cid-qBC9Qi3HBz h1 {
-  color: #545454;
-}
-.cid-qBC9Qi3HBz h3 {
-  margin-bottom: 15px;
-  color: #676767;
-}
-.cid-qBC9Qi3HBz p {
-  color: #676767;
-}
-.cid-qBC9Qi3HBz .mbr-section-btn {
-  margin-bottom: 20px;
-}
-.cid-qBC9Qi3HBz amp-img {
-  width: 100%;
-  text-align: center;
 }
 </style>
+ <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+ <link rel="canonical" href="index.html">
  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><script async src="https://cdn.ampproject.org/v0.js"></script><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   
   
 </head>
 <body>
-<section class="header1 cid-qBC9Pu2rNq mbr-fullscreen" id="header1-0" data-rv-view="6">
+<section class="header1 cid-qBCzR2wOlg mbr-fullscreen" id="header1-0" data-rv-view="6">
 
     
 
@@ -1122,35 +1318,6 @@ p {
                 LEARN MORE
             </a>
         </div>
-    </div>
-
-</section>
-
-<section class="header2 cid-qBC9Qi3HBz" id="header2-1" data-rv-view="9">
-
-    
-
-    
-
-    <div class="mbr-container">
-        <h1 class="mbr-fonts-style align-center mbr-white display-1">
-            Mobirise AMP
-        </h1>
-        <h3 class="mbr-fonts-style align-center mbr-white display-2">
-            Accelerated Mobile Pages by Google
-        </h3>
-        <div class="mbr-text align-center">
-            <p class="mbr-text mbr-fonts-style display-7">
-                Intro with background image, color overlay and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.
-            </p>
-        </div>
-        <div class="mbr-section-btn align-center">
-            <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
-        </div>
-
-        <amp-img src="assets/images/logo1.jpg" alt="a sample image" width="16" height="9" layout="responsive">
-            
-        </amp-img>
     </div>
 
 </section>
