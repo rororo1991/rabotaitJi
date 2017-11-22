@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
   <title>Home</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+  <link rel="canonical" href="index.html">
+ <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
@@ -184,13 +185,13 @@ section {
 
 @media (max-width: 991px) {
   .media-size-item {
-    width: auto ; }
+    width: auto !important; }
 
   .media {
     width: auto; }
 
   .mbr-figure {
-    width: 100% ; } }
+    width: 100% !important; } }
 /*! Buttons */
 .mbr-section-btn {
   margin-left: -.25rem;
@@ -225,6 +226,7 @@ nav .mbr-section-btn {
   align-items: center;
   -webkit-align-items: center;
   min-height: 100vh;
+  box-sizing: border-box;
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
@@ -233,7 +235,7 @@ amp-img img {
   max-width: 100%; }
 
 .super-hide {
-  display: none ; }
+  display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
 
@@ -335,7 +337,7 @@ body {
 .btn-md {
   font-weight: 500;
   letter-spacing: 1px;
-  margin: .4rem .8rem ;
+  margin: .4rem .8rem !important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -345,7 +347,7 @@ body {
 .btn-lg {
   font-weight: 500;
   letter-spacing: 1px;
-  margin: .4rem .8rem ;
+  margin: .4rem .8rem !important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -353,19 +355,19 @@ body {
   border-radius: 0px;
 }
 .bg-primary {
-  background-color: #0079c3 ;
+  background-color: #0079c3 !important;
 }
 .bg-success {
-  background-color: #b2ccd2 ;
+  background-color: #b2ccd2 !important;
 }
 .bg-info {
-  background-color: #1ba1e2 ;
+  background-color: #1ba1e2 !important;
 }
 .bg-warning {
-  background-color: #82786e ;
+  background-color: #82786e !important;
 }
 .bg-danger {
-  background-color: #879a9f ;
+  background-color: #879a9f !important;
 }
 .btn-primary {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -392,12 +394,12 @@ body {
 .btn-primary.active {
   background-color: #0079c3;
   border-color: #0079c3;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #004a76;
   border-color: #004a76;
 }
@@ -408,9 +410,9 @@ body {
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
-  color: #ffffff ;
-  background-color: #004a76 ;
-  border-color: #004a76 ;
+  color: #ffffff !important;
+  background-color: #004a76 !important;
+  border-color: #004a76 !important;
 }
 .btn-secondary {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -437,12 +439,12 @@ body {
 .btn-secondary.active {
   background-color: #fe525b;
   border-color: #fe525b;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #fe0613;
   border-color: #fe0613;
 }
@@ -453,9 +455,9 @@ body {
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
-  color: #ffffff ;
-  background-color: #fe0613 ;
-  border-color: #fe0613 ;
+  color: #ffffff !important;
+  background-color: #fe0613 !important;
+  border-color: #fe0613 !important;
 }
 .btn-info {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -482,12 +484,12 @@ body {
 .btn-info.active {
   background-color: #1ba1e2;
   border-color: #1ba1e2;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #13709e;
   border-color: #13709e;
 }
@@ -498,9 +500,9 @@ body {
 }
 .btn-info.disabled,
 .btn-info:disabled {
-  color: #ffffff ;
-  background-color: #13709e ;
-  border-color: #13709e ;
+  color: #ffffff !important;
+  background-color: #13709e !important;
+  border-color: #13709e !important;
 }
 .btn-success {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -527,12 +529,12 @@ body {
 .btn-success.active {
   background-color: #b2ccd2;
   border-color: #b2ccd2;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #82acb6;
   border-color: #82acb6;
 }
@@ -543,9 +545,9 @@ body {
 }
 .btn-success.disabled,
 .btn-success:disabled {
-  color: #ffffff ;
-  background-color: #82acb6 ;
-  border-color: #82acb6 ;
+  color: #ffffff !important;
+  background-color: #82acb6 !important;
+  border-color: #82acb6 !important;
 }
 .btn-warning {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -572,12 +574,12 @@ body {
 .btn-warning.active {
   background-color: #82786e;
   border-color: #82786e;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #59524b;
   border-color: #59524b;
 }
@@ -588,9 +590,9 @@ body {
 }
 .btn-warning.disabled,
 .btn-warning:disabled {
-  color: #ffffff ;
-  background-color: #59524b ;
-  border-color: #59524b ;
+  color: #ffffff !important;
+  background-color: #59524b !important;
+  border-color: #59524b !important;
 }
 .btn-danger {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -617,12 +619,12 @@ body {
 .btn-danger.active {
   background-color: #879a9f;
   border-color: #879a9f;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #617479;
   border-color: #617479;
 }
@@ -633,9 +635,9 @@ body {
 }
 .btn-danger.disabled,
 .btn-danger:disabled {
-  color: #ffffff ;
-  background-color: #617479 ;
-  border-color: #617479 ;
+  color: #ffffff !important;
+  background-color: #617479 !important;
+  border-color: #617479 !important;
 }
 .btn-black {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -662,12 +664,12 @@ body {
 .btn-black.active {
   background-color: #333333;
   border-color: #333333;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-black:hover,
 .btn-black:focus,
 .btn-black.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #0d0d0d;
   border-color: #0d0d0d;
 }
@@ -678,9 +680,9 @@ body {
 }
 .btn-black.disabled,
 .btn-black:disabled {
-  color: #ffffff ;
-  background-color: #0d0d0d ;
-  border-color: #0d0d0d ;
+  color: #ffffff !important;
+  background-color: #0d0d0d !important;
+  border-color: #0d0d0d !important;
 }
 .btn-white {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -707,12 +709,12 @@ body {
 .btn-white.active {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-white:hover,
 .btn-white:focus,
 .btn-white.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #d4d4d4;
   border-color: #d4d4d4;
 }
@@ -723,23 +725,23 @@ body {
 }
 .btn-white.disabled,
 .btn-white:disabled {
-  color: #ffffff ;
-  background-color: #d4d4d4 ;
-  border-color: #d4d4d4 ;
+  color: #ffffff !important;
+  background-color: #d4d4d4 !important;
+  border-color: #d4d4d4 !important;
 }
 .btn-white,
 .btn-white:active,
 .btn-white.active {
-  color: #333333 ;
+  color: #333333 !important;
 }
 .btn-white:hover,
 .btn-white:focus,
 .btn-white.focus {
-  color: #333333 ;
+  color: #333333 !important;
 }
 .btn-white.disabled,
 .btn-white:disabled {
-  color: #333333 ;
+  color: #333333 !important;
 }
 .btn-primary-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -766,12 +768,12 @@ body {
 .btn-primary-outline.active {
   background: none;
   border-color: #003a5d;
-  color: #003a5d ;
+  color: #003a5d !important;
 }
 .btn-primary-outline:hover,
 .btn-primary-outline:focus,
 .btn-primary-outline.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #0079c3;
   border-color: #0079c3;
 }
@@ -782,9 +784,9 @@ body {
 }
 .btn-primary-outline.disabled,
 .btn-primary-outline:disabled {
-  color: #ffffff ;
-  background-color: #0079c3 ;
-  border-color: #0079c3 ;
+  color: #ffffff !important;
+  background-color: #0079c3 !important;
+  border-color: #0079c3 !important;
 }
 .btn-secondary-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -811,12 +813,12 @@ body {
 .btn-secondary-outline.active {
   background: none;
   border-color: #e9010d;
-  color: #e9010d ;
+  color: #e9010d !important;
 }
 .btn-secondary-outline:hover,
 .btn-secondary-outline:focus,
 .btn-secondary-outline.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #fe525b;
   border-color: #fe525b;
 }
@@ -827,9 +829,9 @@ body {
 }
 .btn-secondary-outline.disabled,
 .btn-secondary-outline:disabled {
-  color: #ffffff ;
-  background-color: #fe525b ;
-  border-color: #fe525b ;
+  color: #ffffff !important;
+  background-color: #fe525b !important;
+  border-color: #fe525b !important;
 }
 .btn-info-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -856,12 +858,12 @@ body {
 .btn-info-outline.active {
   background: none;
   border-color: #106087;
-  color: #106087 ;
+  color: #106087 !important;
 }
 .btn-info-outline:hover,
 .btn-info-outline:focus,
 .btn-info-outline.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #1ba1e2;
   border-color: #1ba1e2;
 }
@@ -872,9 +874,9 @@ body {
 }
 .btn-info-outline.disabled,
 .btn-info-outline:disabled {
-  color: #ffffff ;
-  background-color: #1ba1e2 ;
-  border-color: #1ba1e2 ;
+  color: #ffffff !important;
+  background-color: #1ba1e2 !important;
+  border-color: #1ba1e2 !important;
 }
 .btn-success-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -901,12 +903,12 @@ body {
 .btn-success-outline.active {
   background: none;
   border-color: #72a1ac;
-  color: #72a1ac ;
+  color: #72a1ac !important;
 }
 .btn-success-outline:hover,
 .btn-success-outline:focus,
 .btn-success-outline.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #b2ccd2;
   border-color: #b2ccd2;
 }
@@ -917,9 +919,9 @@ body {
 }
 .btn-success-outline.disabled,
 .btn-success-outline:disabled {
-  color: #ffffff ;
-  background-color: #b2ccd2 ;
-  border-color: #b2ccd2 ;
+  color: #ffffff !important;
+  background-color: #b2ccd2 !important;
+  border-color: #b2ccd2 !important;
 }
 .btn-warning-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -946,12 +948,12 @@ body {
 .btn-warning-outline.active {
   background: none;
   border-color: #4b453f;
-  color: #4b453f ;
+  color: #4b453f !important;
 }
 .btn-warning-outline:hover,
 .btn-warning-outline:focus,
 .btn-warning-outline.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #82786e;
   border-color: #82786e;
 }
@@ -962,9 +964,9 @@ body {
 }
 .btn-warning-outline.disabled,
 .btn-warning-outline:disabled {
-  color: #ffffff ;
-  background-color: #82786e ;
-  border-color: #82786e ;
+  color: #ffffff !important;
+  background-color: #82786e !important;
+  border-color: #82786e !important;
 }
 .btn-danger-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -991,12 +993,12 @@ body {
 .btn-danger-outline.active {
   background: none;
   border-color: #55666b;
-  color: #55666b ;
+  color: #55666b !important;
 }
 .btn-danger-outline:hover,
 .btn-danger-outline:focus,
 .btn-danger-outline.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #879a9f;
   border-color: #879a9f;
 }
@@ -1007,9 +1009,9 @@ body {
 }
 .btn-danger-outline.disabled,
 .btn-danger-outline:disabled {
-  color: #ffffff ;
-  background-color: #879a9f ;
-  border-color: #879a9f ;
+  color: #ffffff !important;
+  background-color: #879a9f !important;
+  border-color: #879a9f !important;
 }
 .btn-black-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -1036,12 +1038,12 @@ body {
 .btn-black-outline.active {
   background: none;
   border-color: #000000;
-  color: #000000 ;
+  color: #000000 !important;
 }
 .btn-black-outline:hover,
 .btn-black-outline:focus,
 .btn-black-outline.focus {
-  color: #ffffff ;
+  color: #ffffff !important;
   background-color: #333333;
   border-color: #333333;
 }
@@ -1052,9 +1054,9 @@ body {
 }
 .btn-black-outline.disabled,
 .btn-black-outline:disabled {
-  color: #ffffff ;
-  background-color: #333333 ;
-  border-color: #333333 ;
+  color: #ffffff !important;
+  background-color: #333333 !important;
+  border-color: #333333 !important;
 }
 .btn-white-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -1081,12 +1083,12 @@ body {
 .btn-white-outline.active {
   background: none;
   border-color: #ffffff;
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .btn-white-outline:hover,
 .btn-white-outline:focus,
 .btn-white-outline.focus {
-  color: #333333 ;
+  color: #333333 !important;
   background-color: #ffffff;
   border-color: #ffffff;
 }
@@ -1096,60 +1098,60 @@ body {
   transform: scale(10);
 }
 .text-primary {
-  color: #0079c3 ;
+  color: #0079c3 !important;
 }
 .text-secondary {
-  color: #fe525b ;
+  color: #fe525b !important;
 }
 .text-success {
-  color: #b2ccd2 ;
+  color: #b2ccd2 !important;
 }
 .text-info {
-  color: #1ba1e2 ;
+  color: #1ba1e2 !important;
 }
 .text-warning {
-  color: #82786e ;
+  color: #82786e !important;
 }
 .text-danger {
-  color: #879a9f ;
+  color: #879a9f !important;
 }
 .text-white {
-  color: #ffffff ;
+  color: #ffffff !important;
 }
 .text-black {
-  color: #000000 ;
+  color: #000000 !important;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #003a5d ;
+  color: #003a5d !important;
 }
 a.text-secondary:hover,
 a.text-secondary:focus {
-  color: #e9010d ;
+  color: #e9010d !important;
 }
 a.text-success:hover,
 a.text-success:focus {
-  color: #72a1ac ;
+  color: #72a1ac !important;
 }
 a.text-info:hover,
 a.text-info:focus {
-  color: #106087 ;
+  color: #106087 !important;
 }
 a.text-warning:hover,
 a.text-warning:focus {
-  color: #4b453f ;
+  color: #4b453f !important;
 }
 a.text-danger:hover,
 a.text-danger:focus {
-  color: #55666b ;
+  color: #55666b !important;
 }
 a.text-white:hover,
 a.text-white:focus {
-  color: #b3b3b3 ;
+  color: #b3b3b3 !important;
 }
 a.text-black:hover,
 a.text-black:focus {
-  color: #4d4d4d ;
+  color: #4d4d4d !important;
 }
 .alert-success {
   background-color: #b2ccd2;
@@ -1277,57 +1279,319 @@ p {
 .is-builder amp-vimeo i-amphtml-sizer {
   position: static;
 }
-.cid-qBCzR2wOlg {
-  background-image: url("assets/images/background3.jpg");
+.cid-qBIcPMBLxi {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
 }
-.cid-qBCzR2wOlg h1,
-.cid-qBCzR2wOlg h3 {
+.cid-qBIcPMBLxi .accordion {
+  padding: 0 15px;
+}
+.cid-qBIcPMBLxi .accordion section {
+  margin-top: -1px;
+}
+.cid-qBIcPMBLxi h4,
+.cid-qBIcPMBLxi p {
+  padding: 20px;
+  background-color: #fff;
+}
+.cid-qBIcPMBLxi h4 {
+  z-index: 2;
+  color: #505050;
+}
+.cid-qBIcPMBLxi h4:focus {
+  z-index: 3;
+  outline: 1px solid #0079c3;
+}
+.cid-qBIcPMBLxi p {
+  z-index: 1;
+  color: #606060;
+  background-color: #f5f5f5;
+  box-shadow: inset 1px 36px 20px -30px rgba(121, 121, 121, 0.13);
+}
+.cid-qBI0rgIg4T {
+  background-image: url("assets/images/background32.jpg");
+}
+.cid-qBI0rgIg4T h1,
+.cid-qBI0rgIg4T h3 {
   padding: 10px 0;
   line-height: 1.2;
   color: #676767;
 }
-.cid-qBCzR2wOlg h3 {
+.cid-qBI0rgIg4T h3 {
   margin-bottom: 15px;
 }
-.cid-qBCzR2wOlg p {
+.cid-qBI0rgIg4T p {
   color: #676767;
 }
-.cid-qBCIxw85kZ {
+.cid-qBIbfRpmIl {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #444444;
+}
+.cid-qBIbfRpmIl .carousel-img {
+  height: 300px;
+  width: 400px;
+}
+.cid-qBIbfRpmIl .mbr-figure {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cid-qBIbfRpmIl .mbr-figure img {
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .cid-qBIbfRpmIl .mbr-figure img {
+    width: 100% !important;
+  }
+}
+.cid-qBI0rpy6cD {
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #f1f1f1;
 }
-.cid-qBCIxw85kZ h1,
-.cid-qBCIxw85kZ h3,
-.cid-qBCIxw85kZ p {
+.cid-qBI0rpy6cD h1,
+.cid-qBI0rpy6cD h3,
+.cid-qBI0rpy6cD p {
   padding: 10px 0;
   line-height: 1.2;
 }
-.cid-qBCIxw85kZ h1 {
+.cid-qBI0rpy6cD h1 {
   color: #545454;
 }
-.cid-qBCIxw85kZ h3 {
+.cid-qBI0rpy6cD h3 {
   margin-bottom: 15px;
   color: #676767;
 }
-.cid-qBCIxw85kZ p {
+.cid-qBI0rpy6cD p {
   color: #676767;
 }
-.cid-qBCIxw85kZ .mbr-section-btn {
+.cid-qBI0rpy6cD .mbr-section-btn {
   margin-bottom: 20px;
 }
-.cid-qBCIxw85kZ amp-img {
+.cid-qBI0rpy6cD amp-img {
   width: 100%;
   text-align: center;
+  margin: 0 auto;
+}
+.cid-qBI0rGj6zJ {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.cid-qBI0rGj6zJ .image-block {
+  margin: auto;
+  font-size: 0;
+}
+.cid-qBI0rGj6zJ .mbr-figure {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cid-qBI0rGj6zJ .image-block {
+    width: 100% !important;
+  }
+}
+.cid-qBI0rGj6zJ figcaption {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+.cid-qBI0s9eHUg {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-qBI0sFgHem {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-qBI0sSShSv {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f9f9f9;
+}
+.cid-qBI0sSShSv h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+  text-align: left;
+}
+.cid-qBI0sSShSv p {
+  color: #767676;
+  text-align: left;
+}
+.cid-qBI0sSShSv .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cid-qBI0sSShSv .card-box {
+  padding-top: 2rem;
+}
+.cid-qBI0sSShSv .card-wrapper {
+  height: 100%;
+}
+.cid-qBI0ttVC3h {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+.cid-qBI0ttVC3h .accordion {
+  padding: 0 15px;
+}
+.cid-qBI0ttVC3h .accordion section {
+  margin-top: -1px;
+}
+.cid-qBI0ttVC3h h4,
+.cid-qBI0ttVC3h p {
+  padding: 20px;
+  background-color: #fff;
+}
+.cid-qBI0ttVC3h h4 {
+  z-index: 2;
+  color: #505050;
+}
+.cid-qBI0ttVC3h h4:focus {
+  z-index: 3;
+  outline: 1px solid #0079c3;
+}
+.cid-qBI0ttVC3h p {
+  z-index: 1;
+  color: #606060;
+  background-color: #f5f5f5;
+  box-shadow: inset 1px 36px 20px -30px rgba(121, 121, 121, 0.13);
+}
+.cid-qBI0tH5q2Z {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qBI0tH5q2Z .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qBI0tQJkOH {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qBI0tQJkOH .mbr-text,
+.cid-qBI0tQJkOH blockquote {
+  color: #767676;
+}
+.cid-qBI0uai3c0 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qBI0uai3c0 .mbr-text,
+.cid-qBI0uai3c0 blockquote {
+  color: #767676;
+}
+.cid-qBI0ukERb5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qBI0ukERb5 .line {
+  background-color: #149dcc;
+  color: #149dcc;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.cid-qBI0ukERb5 .section-text {
+  padding: 2rem 0;
+}
+.cid-qBI0uud2Xq {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qBI0uud2Xq .counter-container {
+  color: #767676;
+}
+.cid-qBI0uud2Xq .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-qBI0uud2Xq .counter-container ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.cid-qBI0uud2Xq .counter-container ul li:before {
+  position: absolute;
+  left: 0px;
+  margin-top: -10px;
+  padding-top: 3px;
+  content: '';
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  line-height: 20px;
+  transition: all .2s;
+  color: #ffffff;
+  background: #149dcc;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  content: '✓';
+}
+.cid-qBI0uQHtKT {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qBI0uZ21pk {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("assets/images/background32.jpg");
 }
 </style>
- <link rel="canonical" href="index.html">
- <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><script async src="https://cdn.ampproject.org/v0.js"></script><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+ 
+  <script async custom-element="amp-main" src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
   
   
 </head>
 <body>
-<section class="header1 cid-qBCzR2wOlg mbr-fullscreen" id="header1-0" data-rv-view="15">
+<section class="cid-qBIcPMBLxi" id="accordion-j" data-rv-view="84">
+
+    
+    
+    <div class="mbr-container">      
+        <amp-accordion class="accordion">
+          <section expanded="">
+            <h4 class="mbr-fonts-style display-2">AMP HTML</h4>
+            <p class="mbr-fonts-style display-6">AMP HTML is HTML with some restrictions for reliable performance.</p>
+          </section>
+          <section>
+            <h4 class="mbr-fonts-style display-2">AMP JS</h4>
+            <p class="mbr-fonts-style display-6">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>
+          </section>
+          <section>
+            <h4 class="mbr-fonts-style display-2">AMP Cache</h4>
+            <p class="mbr-fonts-style display-6">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style display-2">AMP HTML</h4>
+            <p class="mbr-fonts-style display-6">AMP HTML is HTML with some restrictions for reliable performance.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style display-2">AMP JS</h4>
+            <p class="mbr-fonts-style display-6">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style display-2">AMP Cache</h4>
+            <p class="mbr-fonts-style display-6">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>
+          </section>
+        </amp-accordion>
+    </div>
+</section>
+
+<section class="header1 cid-qBI0rgIg4T mbr-fullscreen" id="header1-3" data-rv-view="86">
 
     
 
@@ -1350,7 +1614,27 @@ p {
 
 </section>
 
-<section class="header2 cid-qBCIxw85kZ" id="header2-1" data-rv-view="18">
+<section class="header4 cid-qBIbfRpmIl" id="slider1-i" data-rv-view="89">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <amp-carousel class="carousel" height="300" layout="fixed-height">
+              <amp-img class="carousel-img" src="assets/images/background2.jpg" height="300" width="400" alt="a sample image"></amp-img>
+              <amp-img class="carousel-img" src="assets/images/background1.jpg" height="300" width="400" alt="another sample image"></amp-img>
+              <amp-img class="carousel-img" src="assets/images/background3.jpg" height="300" width="400" alt="and another sample image"></amp-img>
+              <amp-img class="carousel-img" src="assets/images/background2.jpg" height="300" width="400" alt="a sample image"></amp-img>
+              <amp-img class="carousel-img" src="assets/images/background1.jpg" height="300" width="400" alt="another sample image"></amp-img>
+              <amp-img class="carousel-img" src="assets/images/background3.jpg" height="300" width="400" alt="and another sample image"></amp-img>  
+            </amp-carousel>
+        </div>
+    </div>
+</section>
+
+<section class="header2 cid-qBI0rpy6cD" id="header2-4" data-rv-view="92">
 
     
 
@@ -1377,6 +1661,210 @@ p {
         </amp-img>
     </div>
 
+</section>
+
+<section class="cid-qBI0rGj6zJ" id="image1-5" data-rv-view="95">
+
+    
+
+    <div class="image-block">
+        <amp-img src="assets/images/background4.jpg" layout="responsive" width="16" height="9" alt="a sample image">
+            
+        </amp-img>
+        
+    </div>
+</section>
+
+<section class="cid-qBI0s9eHUg" id="youtube-6" data-rv-view="97">
+
+    
+
+    <div class="image-block">
+        <amp-youtube width="480" height="270" layout="responsive" data-videoid="lBTCB7yLs8Y">
+        </amp-youtube>
+    </div>
+</section>
+
+<section class="cid-qBI0sFgHem" id="vimeo-7" data-rv-view="98">
+
+    
+
+    <div class="image-block">
+        <amp-vimeo data-videoid="60855585" layout="responsive" width="16" height="9"></amp-vimeo>
+    </div>
+</section>
+
+<section class="mbr-section cid-qBI0sSShSv" id="features1-8" data-rv-view="99">
+
+    
+    
+    <div class="container">
+        <div class="card p-3 col-12 col-md-6">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <amp-img src="assets/images/background4.jpg" layout="responsive" height="9" width="16" alt="a sample image">
+                        
+                    </amp-img>
+                </div>
+                <div class="card-box">
+                    <h4 class="card-title pb-3 mbr-fonts-style display-7">
+                        No Coding
+                    </h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like. <a href="http://mobirise.com">Learn more...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-3 col-12 col-md-6">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <amp-img src="assets/images/background4.jpg" layout="responsive" height="9" width="16" alt="a sample image">
+                        
+                    </amp-img>
+                </div>
+                <div class="card-box ">
+                    <h4 class="card-title pb-3 mbr-fonts-style display-7">
+                        Mobile Friendly
+                    </h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        All sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site. <a href="http://mobirise.com">Learn more...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+</section>
+
+<section class="cid-qBI0ttVC3h" id="accordion-9" data-rv-view="101">
+
+    
+    
+    <div class="mbr-container">      
+        <amp-accordion class="accordion">
+          <section expanded="">
+            <h4 class="mbr-fonts-style display-2">AMP HTML</h4>
+            <p class="mbr-fonts-style display-6">AMP HTML is HTML with some restrictions for reliable performance.</p>
+          </section>
+          <section>
+            <h4 class="mbr-fonts-style display-2">AMP JS</h4>
+            <p class="mbr-fonts-style display-6">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>
+          </section>
+          <section>
+            <h4 class="mbr-fonts-style display-2">AMP Cache</h4>
+            <p class="mbr-fonts-style display-6">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style display-2">AMP HTML</h4>
+            <p class="mbr-fonts-style display-6">AMP HTML is HTML with some restrictions for reliable performance.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style display-2">AMP JS</h4>
+            <p class="mbr-fonts-style display-6">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style display-2">AMP Cache</h4>
+            <p class="mbr-fonts-style display-6">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>
+          </section>
+        </amp-accordion>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qBI0tH5q2Z" id="content1-a" data-rv-view="103">
+
+    
+
+    <div class="mbr-container">
+        <h2 class="align-center pb-3 mbr-fonts-style display-2">
+            Article Title with Solid Background
+        </h2>
+        <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
+            Shape your future web project with sharp design and refine coded functions.
+        </h3>
+        
+    </div>
+</section>
+
+<section class="mbr-section article cid-qBI0tQJkOH" id="content2-b" data-rv-view="105">
+
+     
+
+    <div class="mbr-container">
+        <div class="mbr-text mbr-fonts-style display-7">
+            <blockquote> <strong>Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <strong>mobile friendly websites</strong> in a few clicks. Mobirise is one of the easiest website development tools <a href="https://mobirise.com/">available</a> today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</blockquote>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article cid-qBI0uai3c0" id="content3-c" data-rv-view="106">
+    
+     
+
+    <div class="mbr-container">
+        <div class="mbr-text mbr-fonts-style display-7">
+            <strong> Make your own website in a few clicks!</strong> Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and <em>mobile friendly websites</em> in a few clicks. Mobirise is one of the easiest website development tools <a href="https://mobirise.com/">available</a> today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article cid-qBI0ukERb5" id="content4-d" data-rv-view="107">
+    
+     
+
+    <div class="mbr-container">
+        <hr class="line">
+        <div class="section-text align-center mbr-fonts-style display-5">
+            Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.
+        </div>
+        <hr class="line">
+    </div>
+</section>
+
+<section class="mbr-section cid-qBI0uud2Xq" id="content7-e" data-rv-view="108">
+     
+
+    <div class="mbr-container">
+        <div class="mbr-text counter-container mbr-fonts-style display-7">
+            <ul>
+                <li><strong>MOBILE FRIENDLY</strong> - o special actions required, all sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site, it will adapt automagically. <a href="https://mobirise.com/">Try it now!</a></li>
+                <li><strong>EASY AND SIMPLE</strong> - cut down the development time with drag-and-drop website builder. Drop the blocks into the page, edit content inline and publish - no technical skills required. <a href="https://mobirise.com/">Try it now!</a></li>
+                <li><strong>UNIQUE STYLES</strong> - choose from the large selection of latest pre-made blocks - full-screen intro, bootstrap carousel, content slider, responsive image gallery with lightbox, parallax scrolling, video backgrounds, hamburger menu, sticky header and more. <a href="https://mobirise.com/">Try it now!</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section cid-qBI0uQHtKT" id="content5-f" data-rv-view="109">
+
+    
+
+    <div class="mbr-container">
+        <div class="mbr-section-btn align-center">
+            <a class="btn btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
+            <a class="btn btn-black-outline display-4" href="https://mobirise.com">LIVE DEMO</a>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section cid-qBI0uZ21pk" id="content6-g" data-rv-view="110">
+
+    
+
+    <div class="mbr-container">
+        <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
+            ARTICLE HEADER
+        </h2>
+        <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5">
+            Article header with background image and parallax effect
+        </h3>
+        
+        
+    </div>
 </section>
 
 
