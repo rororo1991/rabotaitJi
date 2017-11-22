@@ -27,7 +27,7 @@
       }
     },
     "versionFirst": "4.3.0",
-    "uniqCompNum": 1,
+    "uniqCompNum": 2,
     "versionPublish": "4.3.0"
   },
   "pages": {
@@ -68,11 +68,50 @@
           "_name": "header1",
           "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-711x1080.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#886586\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-if=\"overlay && bg.type!== 'color'\" class=\"mbr-overlay {{'overlay' + overlayOpacity}}\">\n    </div>\n\n    <div class=\"mbr-container\">\n        <h1 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n            MOBIRISE AMP\n        </h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n            AMP provides a great user experience across many platforms\n        </h3>\n        <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n            Full width intro with adjustable height, background image. Click any text to edit or style it.\n        </p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">\n                LEARN MORE\n            </a>\n        </div>\n    </div>\n\n</section>",
           "_cid": "qBIraP9J7D",
+          "_anchor": "header1-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".accordion": {
+              "padding": "0 15px",
+              "section": {
+                "margin-top": "-1px"
+              }
+            },
+            "h4, p": {
+              "padding": "20px",
+              "background-color": "#fff"
+            },
+            "h4": {
+              "z-index": "2",
+              "color": "#505050",
+              "&:focus": {
+                "z-index": "3",
+                "outline": "1px solid @primaryColor"
+              }
+            },
+            "p": {
+              "z-index": "1",
+              "color": "#606060",
+              "background-color": "#f5f5f5",
+              "box-shadow": "inset 1px 36px 20px -30px rgba(121, 121, 121, 0.13)"
+            }
+          },
+          "_name": "accordion",
+          "_customHTML": "<section group=\"Toggles & Tabs\"\r\n         plugins=\"amp-main,amp-accordion\">\r\n\r\n    <mbr-parameters>\r\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\r\n\r\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"1\" step=\"1\">\r\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"1\" step=\"1\">\r\n        <select title=\"Tabs\" name=\"tabsAmount\">\r\n            <option value=\"2\">2</option>\r\n            <option value=\"3\" selected>3</option>\r\n            <option value=\"4\">4</option>\r\n            <option value=\"5\">5</option>\r\n            <option value=\"6\">6</option>\r\n        </select>\r\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\r\n    <!-- End block parameters -->\r\n    </mbr-parameters>\r\n    \r\n    <div class=\"mbr-container\">      \r\n        <amp-accordion class=\"accordion\">\r\n          <section expanded>\r\n            <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">AMP HTML</h4>\r\n            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-6\">AMP HTML is HTML with some restrictions for reliable performance.</p>\r\n          </section>\r\n          <section>\r\n            <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">AMP JS</h4>\r\n            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-6\">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>\r\n          </section>\r\n          <section mbr-class=\"{'super-hide': tabsAmount < 3}\">\r\n            <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">AMP Cache</h4>\r\n            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-6\">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>\r\n          </section>\r\n          <section mbr-class=\"{'super-hide': tabsAmount < 4}\">\r\n            <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">AMP HTML</h4>\r\n            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-6\">AMP HTML is HTML with some restrictions for reliable performance.</p>\r\n          </section>\r\n          <section mbr-class=\"{'super-hide': tabsAmount < 5}\">\r\n            <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">AMP JS</h4>\r\n            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-6\">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>\r\n          </section>\r\n          <section mbr-class=\"{'super-hide': tabsAmount < 6}\">\r\n            <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">AMP Cache</h4>\r\n            <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-6\">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>\r\n          </section>\r\n        </amp-accordion>\r\n    </div>\r\n</section>",
+          "_cid": "qBItsczOHx",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "header1-0"
+          "_anchor": "accordion-1"
         }
       ]
     }
