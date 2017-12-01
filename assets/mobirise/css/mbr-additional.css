@@ -1363,6 +1363,11 @@ body {
   height: auto;
   min-height: 100vh;
 }
-.cid-qCxQqjdPn8 {
-  background-image: url("../../../assets/images/jumbotron.jpg");
+.cid-qCxTIdjCiT {
+  background-image: url("../../../assets/images/mbr-720x1080.jpg");
+}
+.cid-qCxTIqjW03 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/background5.jpg");
 }
