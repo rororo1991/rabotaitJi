@@ -476,6 +476,9 @@
                                 // in css sticky navbar has height 64px
                                 // var stickyMenuHeight = $('.mbr-navbar--sticky').length ? 64 : 0;
                                 var stickyMenuHeight = $(target).parents().hasClass('navbar-fixed-top') ? 60 : 0;
+                                if($(target).parents().find('.menu-top').length!=0){
+                                    stickyMenuHeight = stickyMenuHeight + $(target).parents().find('.menu-top').innerHeight();
+                                }
                                 var goTo = target.hash == '#bottom' ? ($(this).height() - $(window).height()) : ($(this).offset().top - stickyMenuHeight);
                                 // Disable Accordion's and Tab's scroll
                                 if ($(this).hasClass('panel-collapse') || $(this).hasClass('tab-pane')) {
@@ -800,10 +803,11 @@
 
     // Functions from plugins for
     // compatible with old projects 
+
     function setActiveCarouselItem(card){
        var $target = $(card).find('.carousel-item:first');
        $target.addClass('active');
-    }
+    } 
     function initTestimonialsCarousel(card){
         var $target = $(card),
             $carouselID = $target.attr('ID') +"-carousel"; 
@@ -812,120 +816,46 @@
         $target.find('.carousel-indicators li').attr('data-target','#'+$carouselID);
         setActiveCarouselItem($target);  
     }
-    function initClientCarousel(card){
-        var $target = $(card),
-        countElems = $target.find('.carousel-item').length,
-        visibleSlides = $target.find('.carousel-inner').attr('data-visible');
-        if (countElems < visibleSlides){
-            visibleSlides = countElems;
-        }
-        $target.find('.carousel-inner').attr('class', 'carousel-inner slides' + visibleSlides);
-        $target.find('.clonedCol').remove();
-
-        $target.find('.carousel-item .col-md-12').each(function() {
-            if (visibleSlides < 2) {
-                $(this).attr('class', 'col-md-12');
-            } else if (visibleSlides == '5') {
-                $(this).attr('class', 'col-md-12 col-lg-15');
-            } else {
-                $(this).attr('class', 'col-md-12 col-lg-' + 12 / visibleSlides);
-            }
-        });
-
-        $target.find('.carousel-item').each(function() {
-            var itemToClone = $(this);
-            for (var i = 1; i < visibleSlides; i++) {
-                itemToClone = itemToClone.next();
-                if (!itemToClone.length) {
-                    itemToClone = $(this).siblings(':first');
-                }
-                var index = itemToClone.index();
-                itemToClone.find('.col-md-12:first').clone().addClass('cloneditem-' + i).addClass('clonedCol').attr('data-cloned-index', index).appendTo($(this).children().eq(0));
-            }
+    function initSvgGradients(card) {
+        $ID = $(card).attr('id')+'-svg-gradient';
+        $(card).find('svg linearGradient').attr('id',$ID);      
+        $(card).find('svg.gradient-element').each(function(){
+            $(this).attr('stroke','url(#'+$ID+')');
+            $(this).attr('fill','url(#'+$ID+')');
         });
     }
-    function updateClientCarousel(card){
-        var $target = $(card),
-            countElems = $target.find('.carousel-item').length,
-            visibleSlides = $target.find('.carousel-inner').attr('data-visible');
-        if (countElems < visibleSlides){
-            visibleSlides = countElems;
-        }
-        $target.find('.clonedCol').remove();
-        $target.find('.carousel-item').each(function() {
-            var itemToClone = $(this);
-            for (var i = 1; i < visibleSlides; i++) {
-                itemToClone = itemToClone.next();
-                if (!itemToClone.length) {
-                    itemToClone = $(this).siblings(':first');
-                }
-                var index = itemToClone.index();
-                itemToClone.find('.col-md-12:first').clone().addClass('cloneditem-' + i).addClass('clonedCol').attr('data-cloned-index', index).appendTo($(this).children().eq(0));
-            }
-        });
-    }
-    function clickHandler(e){
-        e.stopPropagation();
-        e.preventDefault();
-
-        var $target = $(e.target);
-        var curItem;
-        var curIndex;
-
-        if ($target.closest('.clonedCol').length) {
-            curItem = $target.closest('.clonedCol');
-            curIndex = curItem.attr('data-cloned-index');
-        } else {
-            curItem = $target.closest('.carousel-item');
-            curIndex = curItem.index();
-        }
-        var item = $($target.closest('.carousel-inner').find('.carousel-item')[curIndex]).find('img')[0];
-                        
-        if ($target.parents('.clonedCol').length > 0) {
-            item.click();
-        }
-    }
-    $.fn.outerFind = function(selector) {
-        return this.find(selector).addBack(selector);
-    };
-    function initTabs(target) {
-        if ($(target).find('.nav-tabs').length !== 0) {
-            $(target).outerFind('section[id^="tabs"]').each(function() {
-                var componentID = $(this).attr('id');
-                var $tabsNavItem = $(this).find('.nav-tabs .nav-item');
-                var $tabPane = $(this).find('.tab-pane');
-
-                $tabPane.removeClass('active').eq(0).addClass('active');
-
-                $tabsNavItem.find('a').removeClass('active').removeAttr('aria-expanded')
-                    .eq(0).addClass('active');
-
-                $tabPane.each(function() {
-                    $(this).attr('id', componentID + '_tab' + $(this).index());
-                });
-
-                $tabsNavItem.each(function() {
-                    $(this).find('a').attr('href', '#' + componentID + '_tab' + $(this).index());
-                });
+    function animateBackgroundText(el, text, speed) {
+        $(el).stop();
+        var animatedElement = $(el).find('.animated-element');
+        animatedElement.text(text);
+        animatedElement.css({'white-space': 'nowrap',
+                             'z-index': 0});
+        $(el).css({'position' : 'absolute',
+                   'left' : document.body.clientWidth,
+                   'top' : 'calc(50% - ' + ($(el).height() / 2) + 'px)'});
+        $(el).animate({
+            'left': -$(el).width()
+        }, speed, "linear", function() {
+            $(this).css({
+                'left' : document.body.clientWidth
             });
-        }
+        });
+        var intervalID = setInterval(function() {
+                        $(el).animate({
+                            'left': -$(el).width()
+                        }, speed, "linear", function() {
+                            $(this).css({
+                                'left' : document.body.clientWidth
+                            });
+                        });
+                    }, speed);
+        $(el).attr('id', 'interval' + intervalID);
     }
     function clickPrev(event){
         event.stopPropagation();
         event.preventDefault();
     }
     if(!isBuilder){
-        if(typeof window.initClientPlugin ==='undefined'){
-            if($(document.body).find('.clients').length!=0){
-                window.initClientPlugin = true;
-                $(document.body).find('.clients').each(function(index, el) {
-                    if(!$(this).attr('data-isinit')){
-                        initTestimonialsCarousel($(this));
-                        initClientCarousel($(this));
-                    }  
-                });  
-            } 
-        }
         if(typeof window.initPopupBtnPlugin === 'undefined'){
             if($(document.body).find('section.popup-btn-cards').length!=0){
                 window.initPopupBtnPlugin = true;
@@ -978,11 +908,24 @@
                 }
             });
         }
-        if(typeof window.initTabsPlugin === 'undefined'){
-            window.initTabsPlugin = true;
-            initTabs(document.body);
+        if(typeof window.initGradientSvgPlugin ==='undefined'){
+            if($(document.body).find('section.svg-gradient-elements').length!=0){
+                window.initGradientSvgPlugin = true;
+                $('section.svg-gradient-elements').each(function(){
+                    initSvgGradients($(this));
+                });
+            }
         }
-        
+        if(typeof window.initAnimatedBgTextPlugin === 'undefined'){
+            if($(document.body).find('.animated-text-background').length!=0){
+                window.initAnimatedBgTextPlugin = true;
+                $('.animated-text-background').each(function(){
+                    var speed = (101 - parseInt($(this).find('.animated-element').attr('data-speed'))) * 1000;
+                    var text = $(this).find('.animated-element').attr('data-word');
+                    animateBackgroundText($(this), text, speed);
+                });
+            }
+        }
         // Fix for slider bug
         if($('.mbr-slider.carousel').length!=0){
             $('.mbr-slider.carousel').each(function(){
@@ -1014,4 +957,6 @@
             });
         }
     }
+
+
 })(jQuery);
