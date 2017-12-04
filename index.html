@@ -1281,15 +1281,83 @@ blockquote {
   height: 100vh;
   position: fixed;
 }
-.cid-qCQBjEuDcm amp-sidebar {
+amp-sidebar {
+  min-width: 260px;
+  z-index: 2147483647;
+}
+amp-sidebar .sidebar {
+  padding: 1rem 0;
+}
+amp-sidebar .sidebar > li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+amp-sidebar .sidebar a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+amp-sidebar .close-sidebar {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+amp-sidebar .close-sidebar:focus {
+  outline: 2px auto #dd5039;
+}
+amp-sidebar .close-sidebar span {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  border-right: 5px;
+  background-color: #333;
+}
+amp-sidebar .close-sidebar span:nth-child(1) {
+  transform: rotate(45deg);
+}
+amp-sidebar .close-sidebar span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+amp-sidebar .builder-sidebar {
+  position: relative;
+  height: 100vh;
+  z-index: 1030;
+  padding: 1rem 2rem;
+  max-width: 20rem;
+}
+@media (min-width: 992px) {
+  amp-sidebar .brand-name {
+    min-width: 8rem;
+  }
+  amp-sidebar .builder-sidebar {
+    margin-left: auto;
+  }
+  amp-sidebar .builder-sidebar .sidebar li {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  amp-sidebar .builder-sidebar .sidebar li a {
+    padding: .5rem;
+    margin: 0;
+  }
+  amp-sidebar .builder-overlay {
+    display: none ;
+  }
+}
+.cid-qCQTOejWxI amp-sidebar {
   min-width: 260px;
   z-index: 1050;
 }
-.cid-qCQBjEuDcm .open {
+.cid-qCQTOejWxI .open {
   transform: translateX(0%) ;
   display: block;
 }
-.cid-qCQBjEuDcm .headerbar {
+.cid-qCQTOejWxI .headerbar {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -1297,55 +1365,36 @@ blockquote {
   align-items: center;
   background: #ffffff;
 }
-.cid-qCQBjEuDcm .headerbar.sticky-nav {
+.cid-qCQTOejWxI .headerbar.sticky-nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
 }
-.cid-qCQBjEuDcm button.sticky-but {
+.cid-qCQTOejWxI button.sticky-but {
   position: fixed;
 }
-.cid-qCQBjEuDcm .brand {
+.cid-qCQTOejWxI .brand {
   display: flex;
   align-items: center;
 }
-.cid-qCQBjEuDcm .brand-name {
+.cid-qCQTOejWxI .brand-name {
   color: #232323;
 }
-.cid-qCQBjEuDcm .sidebar {
+.cid-qCQTOejWxI .sidebar {
   padding: 1rem 0;
   margin: 0;
 }
-.cid-qCQBjEuDcm .sidebar > li {
+.cid-qCQTOejWxI .sidebar > li {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.cid-qCQBjEuDcm .sidebar a {
+.cid-qCQTOejWxI .sidebar a {
+  display: block;
   text-decoration: none;
   margin-bottom: 10px;
 }
-.cid-qCQBjEuDcm .close-sidebar {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  padding-top: 1rem;
-  cursor: pointer;
-}
-.cid-qCQBjEuDcm .close-sidebar span {
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  border-right: 5px;
-  background-color: #232323;
-}
-.cid-qCQBjEuDcm .close-sidebar span:nth-child(1) {
-  transform: rotate(45deg);
-}
-.cid-qCQBjEuDcm .close-sidebar span:nth-child(2) {
-  transform: rotate(-45deg);
-}
-.cid-qCQBjEuDcm .hamburger {
+.cid-qCQTOejWxI .hamburger {
   position: absolute;
   top: 40px;
   right: 20px;
@@ -1357,10 +1406,10 @@ blockquote {
   cursor: pointer;
   z-index: 1000;
 }
-.cid-qCQBjEuDcm .hamburger:focus {
+.cid-qCQTOejWxI .hamburger:focus {
   outline: none;
 }
-.cid-qCQBjEuDcm .hamburger span {
+.cid-qCQTOejWxI .hamburger span {
   position: absolute;
   right: 0;
   width: 30px;
@@ -1368,66 +1417,23 @@ blockquote {
   border-right: 5px;
   background-color: #232323;
 }
-.cid-qCQBjEuDcm .hamburger span:nth-child(1) {
+.cid-qCQTOejWxI .hamburger span:nth-child(1) {
   top: 0;
   transition: all .2s;
 }
-.cid-qCQBjEuDcm .hamburger span:nth-child(2) {
+.cid-qCQTOejWxI .hamburger span:nth-child(2) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCQBjEuDcm .hamburger span:nth-child(3) {
+.cid-qCQTOejWxI .hamburger span:nth-child(3) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCQBjEuDcm .hamburger span:nth-child(4) {
+.cid-qCQTOejWxI .hamburger span:nth-child(4) {
   top: 16px;
   transition: all .2s;
 }
-.cid-qCQBjEuDcm .builder-sidebar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  background: #ffffff;
-  z-index: 1030;
-  padding: 1rem 3rem;
-  max-width: 20rem;
-}
-@media (min-width: 992px) {
-  .cid-qCQBjEuDcm .brand-name {
-    min-width: 8rem;
-  }
-  .cid-qCQBjEuDcm .builder-sidebar {
-    margin-left: auto;
-    position: relative;
-    display: flex ;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    max-width: initial;
-    padding: 0;
-  }
-  .cid-qCQBjEuDcm .builder-sidebar .close-sidebar {
-    display: none;
-  }
-  .cid-qCQBjEuDcm .builder-sidebar .sidebar {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .cid-qCQBjEuDcm .builder-sidebar .sidebar li {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .cid-qCQBjEuDcm .builder-sidebar .sidebar li a {
-    padding: .5rem;
-    margin: 0;
-  }
-  .cid-qCQBjEuDcm .builder-overlay {
-    display: none ;
-  }
-}
-.cid-qCQBjEuDcm amp-img {
+.cid-qCQTOejWxI amp-img {
   width: 70px;
   max-height: 70px;
   margin-right: 1rem;
@@ -1470,12 +1476,10 @@ blockquote {
               <a class="text-black display-4" href="https://mobirise.com">Example 3</a>
             </div>
             
-            <div class="navbar-buttons mbr-section-btn align-center">
-              <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Btn Example</a>
-            </div>
+            <div class="navbar-buttons mbr-section-btn align-center"><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Btn Example</a></div>
         </div>
     </amp-sidebar>
-<section class="menu cid-qCQBjEuDcm" id="menu2-2c" data-rv-view="18">
+<section class="menu cid-qCQTOejWxI" id="menu2-2t" data-rv-view="18">
 
     
     <nav class="headerbar sticky-nav">
@@ -1507,9 +1511,7 @@ blockquote {
         <h1 class="mbr-fonts-style align-center display-1">Google AMP</h1>
         
         <p class="mbr-fonts-style mbr-text align-center display-7">Full width intro with adjustable height, background image. Click any text to edit or style it.</p>
-        <div class="mbr-section-btn align-center">
-            <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
-        </div>
+        <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="https://mobirise.com">LEARN MORE</a></div>
     </div>
 
 </section>
@@ -1526,9 +1528,7 @@ blockquote {
         <div class="mbr-text align-center">
             <p class="mbr-text mbr-fonts-style display-7">Intro with background image and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.</p>
         </div>
-        <div class="mbr-section-btn align-center">
-            <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
-        </div>
+        <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="https://mobirise.com">LEARN MORE</a></div>
 
         <amp-img src="assets/images/amp-phone.jpg" alt="a sample image" width="688" height="387" layout="responsive">
             
