@@ -28,7 +28,7 @@
       "additionalSetColors": []
     },
     "versionFirst": "4.5.1",
-    "uniqCompNum": 27,
+    "uniqCompNum": 28,
     "versionPublish": "4.5.1"
   },
   "pages": {
@@ -188,12 +188,12 @@
           },
           "_name": "menu2",
           "_customHTML": "<!-- <amp-sidebar id=\"sidebar1\" layout=\"nodisplay\" side=\"right\" class=\"mbr-black\">\n  <div role=\"button\" aria-label=\"close sidebar\" \n       on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\">\n       <span></span>\n       <span></span>\n  </div>\n  <ul mbr-menu class=\"sidebar\"\n      mbr-theme-style=\"display-4\">\n    <li><a href=\"#\">Example 1</a></li>\n    <li><a href=\"#\">Example 2</a></li>\n    <li><a href=\"#\">Example 3</a></li>\n  </ul>\n</amp-sidebar> -->\n<section class=\"menu\" group=\"Menu\" plugins=\"amp-sidebar\" global=\"\" once=\"menu\" always-top=\"\" position-absolute=\"\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n        <input type=\"range\" title=\"Logo Size\" inline=\"\" name=\"logoSize\" min=\"4\" max=\"10\" step=\"0.5\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"right\">\n        <nav class=\"headerbar\" mbr-class=\"{'sticky-nav':sticky}\">\n          <div class=\"brand\">\n              <span mbr-if=\"showLogo\" class=\"brand-logo\">\n                  <amp-img src=\"../_images/logo1.png\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"a sample image\">\n                      <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n                  </amp-img>\n              </span>\n              <div mbr-text=\"\" mbr-theme-style=\"display-2\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style\" data-app-selector=\".brand-name\"><a href=\"#\" class=\"text-black\">Mobirise AMP</a></div>\n          </div>\n          \n          <!-- ОВерлей в браузере должен удалять т.к. у амп-садбар есть свой -->\n          <div class=\"overlay builder-overlay\" onclick=\"$('#builder-sidebar').hide(); $('.builder-overlay').hide();\"></div>\n          \n\n          <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n              <!-- <div role=\"button\" aria-label=\"close sidebar\" on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\"> -->\n                <div role=\"button\" aria-label=\"close sidebar\" onclick=\"$('#builder-sidebar').hide(); $('.builder-overlay').hide();\" tabindex=\"0\" class=\"close-sidebar\">\n                <span></span>\n                <span></span>\n              </div>\n\n              <!-- если юзать navbar-nav nav-dropdown класс, меню будет крашиться при добавлении нового итема, но без этого добавляется линк а не итем--> \n              <ul mbr-menu=\"\" class=\"sidebar\" mbr-theme-style=\"display-4\" mbr-if=\"showLinks\">\n                <a class=\"text-black\" href=\"https://mobirise.com\">Example 1</a>\n                <a class=\"text-black\" href=\"https://mobirise.com\">Example 2</a>\n                <a class=\"text-black\" href=\"https://mobirise.com\">Example 3</a>\n              </ul>\n              \n              <div mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn align-center\">\n                <a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">Btn Example</a></div>\n          </div>\n\n          <!-- событие онклик заменить на амп ивент on -->\n          <div role=\"button\" tabindex=\"0\" class=\"hamburger\" onclick=\"$('#builder-sidebar').show(); $('.builder-overlay').show();\">\n              <span></span>\n              <span></span>\n              <span></span>\n              <span></span>\n          </div>\n        </nav>\n    </amp-sidebar>\n    <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn caps m2\">Toggle sidebar</button>\n</section>\n",
-          "_cid": "qCzlC4PJMo",
+          "_cid": "qCOVd2bk0i",
+          "_anchor": "menu2-r",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu2-q"
+          "_params": {}
         },
         {
           "_styles": {
