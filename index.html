@@ -1281,69 +1281,86 @@ blockquote {
   height: 100vh;
   position: fixed;
 }
-.cid-qCOVd2bk0i .headerbar {
+.cid-qCQBjEuDcm amp-sidebar {
+  min-width: 260px;
+  z-index: 1050;
+}
+.cid-qCQBjEuDcm .open {
+  transform: translateX(0%) ;
+  display: block;
+}
+.cid-qCQBjEuDcm .headerbar {
   display: flex;
+  flex-direction: column;
   padding: 1rem;
   min-height: 60px;
   align-items: center;
   background: #ffffff;
 }
-.cid-qCOVd2bk0i .headerbar.sticky-nav {
+.cid-qCQBjEuDcm .headerbar.sticky-nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
 }
-.cid-qCOVd2bk0i .brand {
+.cid-qCQBjEuDcm button.sticky-but {
+  position: fixed;
+}
+.cid-qCQBjEuDcm .brand {
   display: flex;
   align-items: center;
 }
-.cid-qCOVd2bk0i .brand-name {
+.cid-qCQBjEuDcm .brand-name {
   color: #232323;
 }
-.cid-qCOVd2bk0i .sidebar {
+.cid-qCQBjEuDcm .sidebar {
   padding: 1rem 0;
   margin: 0;
 }
-.cid-qCOVd2bk0i .sidebar > li {
+.cid-qCQBjEuDcm .sidebar > li {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.cid-qCOVd2bk0i .sidebar a {
+.cid-qCQBjEuDcm .sidebar a {
   text-decoration: none;
   margin-bottom: 10px;
 }
-.cid-qCOVd2bk0i .close-sidebar {
+.cid-qCQBjEuDcm .close-sidebar {
   width: 30px;
   height: 30px;
   position: relative;
   padding-top: 1rem;
   cursor: pointer;
 }
-.cid-qCOVd2bk0i .close-sidebar span {
+.cid-qCQBjEuDcm .close-sidebar span {
   position: absolute;
   width: 30px;
   height: 2px;
   border-right: 5px;
   background-color: #232323;
 }
-.cid-qCOVd2bk0i .close-sidebar span:nth-child(1) {
+.cid-qCQBjEuDcm .close-sidebar span:nth-child(1) {
   transform: rotate(45deg);
 }
-.cid-qCOVd2bk0i .close-sidebar span:nth-child(2) {
+.cid-qCQBjEuDcm .close-sidebar span:nth-child(2) {
   transform: rotate(-45deg);
 }
-.cid-qCOVd2bk0i .hamburger {
+.cid-qCQBjEuDcm .hamburger {
+  position: absolute;
+  top: 40px;
+  right: 20px;
   margin-left: auto;
   width: 30px;
   height: 20px;
-  position: relative;
+  background: none;
+  border: none;
   cursor: pointer;
+  z-index: 1000;
 }
-.cid-qCOVd2bk0i .hamburger:focus {
+.cid-qCQBjEuDcm .hamburger:focus {
   outline: none;
 }
-.cid-qCOVd2bk0i .hamburger span {
+.cid-qCQBjEuDcm .hamburger span {
   position: absolute;
   right: 0;
   width: 30px;
@@ -1351,72 +1368,68 @@ blockquote {
   border-right: 5px;
   background-color: #232323;
 }
-.cid-qCOVd2bk0i .hamburger span:nth-child(1) {
+.cid-qCQBjEuDcm .hamburger span:nth-child(1) {
   top: 0;
   transition: all .2s;
 }
-.cid-qCOVd2bk0i .hamburger span:nth-child(2) {
+.cid-qCQBjEuDcm .hamburger span:nth-child(2) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCOVd2bk0i .hamburger span:nth-child(3) {
+.cid-qCQBjEuDcm .hamburger span:nth-child(3) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCOVd2bk0i .hamburger span:nth-child(4) {
+.cid-qCQBjEuDcm .hamburger span:nth-child(4) {
   top: 16px;
   transition: all .2s;
 }
-.cid-qCOVd2bk0i .builder-sidebar {
+.cid-qCQBjEuDcm .builder-sidebar {
   position: absolute;
   top: 0;
   right: 0;
   height: 100vh;
-  display: none;
   background: #ffffff;
   z-index: 1030;
   padding: 1rem 3rem;
   max-width: 20rem;
 }
 @media (min-width: 992px) {
-  .cid-qCOVd2bk0i .brand-name {
+  .cid-qCQBjEuDcm .brand-name {
     min-width: 8rem;
   }
-  .cid-qCOVd2bk0i .builder-sidebar {
+  .cid-qCQBjEuDcm .builder-sidebar {
     margin-left: auto;
     position: relative;
     display: flex ;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     height: auto;
     max-width: initial;
     padding: 0;
   }
-  .cid-qCOVd2bk0i .builder-sidebar .close-sidebar {
+  .cid-qCQBjEuDcm .builder-sidebar .close-sidebar {
     display: none;
   }
-  .cid-qCOVd2bk0i .builder-sidebar .sidebar {
+  .cid-qCQBjEuDcm .builder-sidebar .sidebar {
     display: flex;
     flex-wrap: wrap;
   }
-  .cid-qCOVd2bk0i .builder-sidebar .sidebar li {
+  .cid-qCQBjEuDcm .builder-sidebar .sidebar li {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .cid-qCOVd2bk0i .builder-sidebar .sidebar li a {
+  .cid-qCQBjEuDcm .builder-sidebar .sidebar li a {
     padding: .5rem;
     margin: 0;
   }
-  .cid-qCOVd2bk0i .hamburger {
-    display: none;
-  }
-  .cid-qCOVd2bk0i .builder-overlay {
+  .cid-qCQBjEuDcm .builder-overlay {
     display: none ;
   }
 }
-.cid-qCOVd2bk0i amp-img {
-  width: 4rem;
-  height: 4rem;
+.cid-qCQBjEuDcm amp-img {
+  width: 70px;
+  max-height: 70px;
   margin-right: 1rem;
   display: flex;
   align-items: center;
@@ -1444,51 +1457,47 @@ blockquote {
   
   
 </head>
-<body><amp-sidebar>
-        <nav class="headerbar sticky-nav">
-          <div class="brand">
-              <span class="brand-logo">
-                  <amp-img src="assets/images/logo1.png" layout="responsive" width="0" height="0" alt="a sample image">
-                      
-                  </amp-img>
-              </span>
-              <div class="brand-name mbr-fonts-style display-2"><a href="#" class="text-black">Mobirise AMP</a></div>
-          </div>
-          
-          <!-- ОВерлей в браузере должен удалять т.к. у амп-садбар есть свой -->
-          <div class="overlay builder-overlay" onclick="$('#builder-sidebar').hide(); $('.builder-overlay').hide();"></div>
-          
-
-          <div class="builder-sidebar" id="builder-sidebar">
-              <!-- <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar"> -->
-                <div role="button" aria-label="close sidebar" onclick="$('#builder-sidebar').hide(); $('.builder-overlay').hide();" tabindex="0" class="close-sidebar">
+<body><amp-sidebar id="sidebar" layout="nodisplay" side="right">
+        <div class="builder-sidebar" id="builder-sidebar">
+            <button on="tap:sidebar.close" class="close-sidebar">
                 <span></span>
                 <span></span>
-              </div>
+            </button>
 
-              <!-- если юзать navbar-nav nav-dropdown класс, меню будет крашиться при добавлении нового итема, но без этого добавляется линк а не итем--> 
-              <ul class="sidebar" data-app-modern-menu="true">
-                <a class="text-black display-4" href="https://mobirise.com">Example 1</a>
-                <a class="text-black display-4" href="https://mobirise.com">Example 2</a>
-                <a class="text-black display-4" href="https://mobirise.com">Example 3</a>
-              </ul>
-              
-              <div class="navbar-buttons mbr-section-btn align-center">
-                <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Btn Example</a></div>
-          </div>
-
-          <!-- событие онклик заменить на амп ивент on -->
-          <div role="button" tabindex="0" class="hamburger" onclick="$('#builder-sidebar').show(); $('.builder-overlay').show();">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-        </nav>
+            <div class="sidebar" data-app-modern-menu="true">
+              <a class="text-black display-4" href="https://mobirise.com">Example 1</a>
+              <a class="text-black display-4" href="https://mobirise.com">Example 2</a>
+              <a class="text-black display-4" href="https://mobirise.com">Example 3</a>
+            </div>
+            
+            <div class="navbar-buttons mbr-section-btn align-center">
+              <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Btn Example</a>
+            </div>
+        </div>
     </amp-sidebar>
+<section class="menu cid-qCQBjEuDcm" id="menu2-2c" data-rv-view="18">
 
+    
+    <nav class="headerbar sticky-nav">
+      <div class="brand">
+          <span class="brand-logo">
+              <amp-img src="assets/images/logo1.png" layout="responsive" width="70" height="69" alt="a sample image">
+                  
+              </amp-img>
+          </span>
+          <div class="brand-name mbr-fonts-style display-2"><a href="#" class="text-black">Mobirise AMP</a></div>
+      </div>
+    </nav>
+    
+    <button on="tap:sidebar.toggle" class="ampstart-btn hamburger sticky-but">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</section>
 
-<section class="header1 cid-qCz2RkrM0y mbr-fullscreen" id="header1-8" data-rv-view="18">
+<section class="header1 cid-qCz2RkrM0y mbr-fullscreen" id="header1-8" data-rv-view="20">
 
     
 
@@ -1505,7 +1514,7 @@ blockquote {
 
 </section>
 
-<section class="header2 cid-qCz2RD8fx1" id="header2-9" data-rv-view="21">
+<section class="header2 cid-qCz2RD8fx1" id="header2-9" data-rv-view="23">
 
     
 
