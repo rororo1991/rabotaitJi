@@ -1281,6 +1281,138 @@ blockquote {
   height: 100vh;
   position: fixed;
 }
+.mbr-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.mbr-justify-content-center {
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .mbr-col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-row {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .mbr-col-md-3 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-md-4 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mbr-col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .mbr-col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .mbr-col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-lg-4 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .mbr-col-xl-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mbr-col-xl-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 section.sidebar-open:before {
   content: '';
   position: fixed;
@@ -1291,11 +1423,11 @@ section.sidebar-open:before {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1040;
 }
-.cid-qCVUag2Icl amp-sidebar {
+.cid-qCW3zA2MGc amp-sidebar {
   min-width: 260px;
   z-index: 1050;
 }
-.cid-qCVUag2Icl amp-sidebar.open:after {
+.cid-qCW3zA2MGc amp-sidebar.open:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1304,65 +1436,65 @@ section.sidebar-open:before {
   right: 0;
   background-color: red;
 }
-.cid-qCVUag2Icl .open {
+.cid-qCW3zA2MGc .open {
   transform: translateX(0%) ;
   display: block;
 }
-.cid-qCVUag2Icl .builder-sidebar {
-  background-color: #ffffff;
+.cid-qCW3zA2MGc .builder-sidebar {
+  background-color: #ffe640;
   position: relative;
   height: 100vh;
   z-index: 1030;
   padding: 1rem 2rem;
   max-width: 20rem;
 }
-.cid-qCVUag2Icl .headerbar {
+.cid-qCW3zA2MGc .headerbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
   min-height: 100px;
   align-items: center;
-  background: #ffffff;
+  background: #ffe640;
 }
-.cid-qCVUag2Icl .headerbar.sticky-nav {
+.cid-qCW3zA2MGc .headerbar.sticky-nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
 }
-.cid-qCVUag2Icl button.sticky-but {
+.cid-qCW3zA2MGc button.sticky-but {
   position: fixed;
 }
-.cid-qCVUag2Icl .brand {
+.cid-qCW3zA2MGc .brand {
   display: flex;
   align-items: center;
 }
-.cid-qCVUag2Icl .brand p {
+.cid-qCW3zA2MGc .brand p {
   margin: 0;
 }
 @media (max-width: 991px) {
-  .cid-qCVUag2Icl .brand {
+  .cid-qCW3zA2MGc .brand {
     align-self: flex-start;
   }
 }
-.cid-qCVUag2Icl .brand-name {
+.cid-qCW3zA2MGc .brand-name {
   color: #232323;
 }
-.cid-qCVUag2Icl .sidebar {
+.cid-qCW3zA2MGc .sidebar {
   padding: 1rem 0;
   margin: 0;
 }
-.cid-qCVUag2Icl .sidebar > li {
+.cid-qCW3zA2MGc .sidebar > li {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.cid-qCVUag2Icl .sidebar a {
+.cid-qCW3zA2MGc .sidebar a {
   display: block;
   text-decoration: none;
   margin-bottom: 10px;
 }
-.cid-qCVUag2Icl .close-sidebar {
+.cid-qCW3zA2MGc .close-sidebar {
   width: 30px;
   height: 30px;
   position: relative;
@@ -1370,10 +1502,10 @@ section.sidebar-open:before {
   background-color: transparent;
   border: none;
 }
-.cid-qCVUag2Icl .close-sidebar:focus {
+.cid-qCW3zA2MGc .close-sidebar:focus {
   outline: 2px auto #44f7b3;
 }
-.cid-qCVUag2Icl .close-sidebar span {
+.cid-qCW3zA2MGc .close-sidebar span {
   position: absolute;
   left: 0;
   width: 30px;
@@ -1381,32 +1513,32 @@ section.sidebar-open:before {
   border-right: 5px;
   background-color: #232323;
 }
-.cid-qCVUag2Icl .close-sidebar span:nth-child(1) {
+.cid-qCW3zA2MGc .close-sidebar span:nth-child(1) {
   transform: rotate(45deg);
 }
-.cid-qCVUag2Icl .close-sidebar span:nth-child(2) {
+.cid-qCW3zA2MGc .close-sidebar span:nth-child(2) {
   transform: rotate(-45deg);
 }
 @media (min-width: 992px) {
-  .cid-qCVUag2Icl .brand-name {
+  .cid-qCW3zA2MGc .brand-name {
     min-width: 8rem;
   }
-  .cid-qCVUag2Icl .builder-sidebar {
+  .cid-qCW3zA2MGc .builder-sidebar {
     margin-left: auto;
   }
-  .cid-qCVUag2Icl .builder-sidebar .sidebar li {
+  .cid-qCW3zA2MGc .builder-sidebar .sidebar li {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .cid-qCVUag2Icl .builder-sidebar .sidebar li a {
+  .cid-qCW3zA2MGc .builder-sidebar .sidebar li a {
     padding: .5rem;
     margin: 0;
   }
-  .cid-qCVUag2Icl .builder-overlay {
+  .cid-qCW3zA2MGc .builder-overlay {
     display: none ;
   }
 }
-.cid-qCVUag2Icl .hamburger {
+.cid-qCW3zA2MGc .hamburger {
   position: absolute;
   top: 40px;
   right: 20px;
@@ -1418,10 +1550,10 @@ section.sidebar-open:before {
   cursor: pointer;
   z-index: 1000;
 }
-.cid-qCVUag2Icl .hamburger:focus {
+.cid-qCW3zA2MGc .hamburger:focus {
   outline: none;
 }
-.cid-qCVUag2Icl .hamburger span {
+.cid-qCW3zA2MGc .hamburger span {
   position: absolute;
   right: 0;
   width: 30px;
@@ -1429,23 +1561,23 @@ section.sidebar-open:before {
   border-right: 5px;
   background-color: #232323;
 }
-.cid-qCVUag2Icl .hamburger span:nth-child(1) {
+.cid-qCW3zA2MGc .hamburger span:nth-child(1) {
   top: 0;
   transition: all .2s;
 }
-.cid-qCVUag2Icl .hamburger span:nth-child(2) {
+.cid-qCW3zA2MGc .hamburger span:nth-child(2) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCVUag2Icl .hamburger span:nth-child(3) {
+.cid-qCW3zA2MGc .hamburger span:nth-child(3) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCVUag2Icl .hamburger span:nth-child(4) {
+.cid-qCW3zA2MGc .hamburger span:nth-child(4) {
   top: 16px;
   transition: all .2s;
 }
-.cid-qCVUag2Icl amp-img {
+.cid-qCW3zA2MGc amp-img {
   width: 70px;
   max-height: 70px;
   margin-right: 1rem;
@@ -1505,23 +1637,25 @@ section.sidebar-open:before {
   
   
 </head>
-<body><amp-sidebar id="sidebar" class="cid-qCVUag2Icl" layout="nodisplay" side="right">
+<body><amp-sidebar id="sidebar" class="cid-qCW3zA2MGc" layout="nodisplay" side="left">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
                 <span></span>
                 <span></span>
             </button>
 
-            <div class="sidebar" data-app-modern-menu="true"><a class="text-black display-4" href="https://mobirise.com">Example 1</a> <a class="text-black display-4" href="https://mobirise.com">Example 1</a>
+            <div class="sidebar" data-app-modern-menu="true">
+              <a class="text-black display-4" href="https://mobirise.com">Example 1</a>
               <a class="text-black display-4" href="https://mobirise.com">Example 2</a>
-              <a class="text-black display-4" href="https://mobirise.com">Example 3</a> <a class="text-black display-4" href="https://mobirise.com">Example 3</a></div>
+              <a class="text-black display-4" href="https://mobirise.com">Example 3</a>
+            </div>
             
             <div class="navbar-buttons mbr-section-btn align-center">
               <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Btn Example</a>
             </div>
         </div>
     </amp-sidebar>
-<section class="menu cid-qCVUag2Icl" id="menu2-3i" data-rv-view="20">
+<section class="menu cid-qCW3zA2MGc" id="menu2-3l" data-rv-view="12">
 
     
     <nav class="headerbar sticky-nav">
@@ -1543,7 +1677,7 @@ section.sidebar-open:before {
     </button>
 </section>
 
-<section class="header1 cid-qCz2RkrM0y mbr-fullscreen" id="header1-8" data-rv-view="22">
+<section class="header1 cid-qCz2RkrM0y mbr-fullscreen" id="header1-8" data-rv-view="14">
 
     
 
@@ -1558,7 +1692,7 @@ section.sidebar-open:before {
 
 </section>
 
-<section class="header4 cid-qCVuDaioPF" id="slider1-34" data-rv-view="25">
+<section class="header4 cid-qCVuDaioPF" id="slider1-34" data-rv-view="17">
 
     
 
@@ -1574,7 +1708,7 @@ section.sidebar-open:before {
     </div>
 </section>
 
-<section class="header2 cid-qCz2RD8fx1" id="header2-9" data-rv-view="27">
+<section class="header2 cid-qCz2RD8fx1" id="header2-9" data-rv-view="19">
 
     
 
