@@ -47,8 +47,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Mobirise AMP",
+        "meta_descr": "It's test of my amp page. I think it will work correctly",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
