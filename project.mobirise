@@ -33,7 +33,15 @@
     },
     "versionFirst": "4.5.1",
     "uniqCompNum": 11,
-    "versionPublish": "4.5.1"
+    "versionPublish": "4.5.1",
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "robotsSwitcher": "on",
+    "siteUrl": "",
+    "sitemapSwitcherAuto": "on",
+    "favicon": "",
+    "noImageResize": "",
+    "cookiesAlert": "",
+    "google-analytics": ""
   },
   "pages": {
     "index.html": {
