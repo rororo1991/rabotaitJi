@@ -361,7 +361,7 @@ body {
   border-radius: 0px;
 }
 .bg-primary {
-  background-color: #55b993 ;
+  background-color: #44f7b3 ;
 }
 .bg-success {
   background-color: #b2ccd2 ;
@@ -392,28 +392,28 @@ body {
   transform: scale(0);
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
-  background-color: #38896a;
-  border-color: #38896a;
+  background-color: #0ae592;
+  border-color: #0ae592;
 }
 .btn-primary,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #55b993;
-  border-color: #55b993;
+  background-color: #44f7b3;
+  border-color: #44f7b3;
   color: #ffffff ;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ffffff ;
-  background-color: #38896a;
-  border-color: #38896a;
+  background-color: #0ae592;
+  border-color: #0ae592;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #ffffff ;
-  background-color: #38896a ;
-  border-color: #38896a ;
+  background-color: #0ae592 ;
+  border-color: #0ae592 ;
 }
 .btn-secondary {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -726,28 +726,28 @@ body {
   transform: scale(0);
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
-  background-color: #55b993;
-  border-color: #55b993;
+  background-color: #44f7b3;
+  border-color: #44f7b3;
 }
 .btn-primary-outline,
 .btn-primary-outline:active,
 .btn-primary-outline.active {
   background: none;
-  border-color: #31775c;
-  color: #31775c ;
+  border-color: #09cc82;
+  color: #09cc82 ;
 }
 .btn-primary-outline:hover,
 .btn-primary-outline:focus,
 .btn-primary-outline.focus {
   color: #ffffff ;
-  background-color: #55b993;
-  border-color: #55b993;
+  background-color: #44f7b3;
+  border-color: #44f7b3;
 }
 .btn-primary-outline.disabled,
 .btn-primary-outline:disabled {
   color: #ffffff ;
-  background-color: #55b993 ;
-  border-color: #55b993 ;
+  background-color: #44f7b3 ;
+  border-color: #44f7b3 ;
 }
 .btn-secondary-outline {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -1029,7 +1029,7 @@ body {
   transform: scale(10);
 }
 .text-primary {
-  color: #55b993 ;
+  color: #44f7b3 ;
 }
 .text-secondary {
   color: #ffde00 ;
@@ -1054,7 +1054,7 @@ body {
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #31775c ;
+  color: #09cc82 ;
 }
 a.text-secondary:hover,
 a.text-secondary:focus {
@@ -1104,11 +1104,11 @@ a.text-black:focus {
 }
 a,
 a:hover {
-  color: #55b993;
+  color: #44f7b3;
 }
 .mbr-plan-header.bg-primary .mbr-plan-subtitle,
 .mbr-plan-header.bg-primary .mbr-plan-price-desc {
-  color: #afdecc;
+  color: #ffffff;
 }
 .mbr-plan-header.bg-success .mbr-plan-subtitle,
 .mbr-plan-header.bg-success .mbr-plan-price-desc {
@@ -1152,7 +1152,7 @@ blockquote {
   padding: 10px 0 10px 20px;
   font-size: 0.95rem;
   position: relative;
-  border-color: #55b993;
+  border-color: #44f7b3;
   border-width: 3px;
 }
 ul,
@@ -1281,65 +1281,88 @@ blockquote {
   height: 100vh;
   position: fixed;
 }
-.cid-qCVcbRXhwi amp-sidebar {
+section.sidebar-open:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1040;
+}
+.cid-qCVUag2Icl amp-sidebar {
   min-width: 260px;
   z-index: 1050;
 }
-.cid-qCVcbRXhwi .open {
+.cid-qCVUag2Icl amp-sidebar.open:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+}
+.cid-qCVUag2Icl .open {
   transform: translateX(0%) ;
   display: block;
 }
-.cid-qCVcbRXhwi .builder-sidebar {
-  background-color: #232323;
+.cid-qCVUag2Icl .builder-sidebar {
+  background-color: #ffffff;
   position: relative;
   height: 100vh;
   z-index: 1030;
   padding: 1rem 2rem;
   max-width: 20rem;
 }
-.cid-qCVcbRXhwi .headerbar {
+.cid-qCVUag2Icl .headerbar {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 1rem;
   min-height: 100px;
   align-items: center;
-  background: #232323;
+  background: #ffffff;
 }
-.cid-qCVcbRXhwi .headerbar.sticky-nav {
+.cid-qCVUag2Icl .headerbar.sticky-nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
 }
-.cid-qCVcbRXhwi button.sticky-but {
+.cid-qCVUag2Icl button.sticky-but {
   position: fixed;
 }
-.cid-qCVcbRXhwi .brand {
+.cid-qCVUag2Icl .brand {
   display: flex;
   align-items: center;
 }
+.cid-qCVUag2Icl .brand p {
+  margin: 0;
+}
 @media (max-width: 991px) {
-  .cid-qCVcbRXhwi .brand {
+  .cid-qCVUag2Icl .brand {
     align-self: flex-start;
   }
 }
-.cid-qCVcbRXhwi .brand-name {
+.cid-qCVUag2Icl .brand-name {
   color: #232323;
 }
-.cid-qCVcbRXhwi .sidebar {
+.cid-qCVUag2Icl .sidebar {
   padding: 1rem 0;
   margin: 0;
 }
-.cid-qCVcbRXhwi .sidebar > li {
+.cid-qCVUag2Icl .sidebar > li {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.cid-qCVcbRXhwi .sidebar a {
+.cid-qCVUag2Icl .sidebar a {
   display: block;
   text-decoration: none;
   margin-bottom: 10px;
 }
-.cid-qCVcbRXhwi .close-sidebar {
+.cid-qCVUag2Icl .close-sidebar {
   width: 30px;
   height: 30px;
   position: relative;
@@ -1347,43 +1370,43 @@ blockquote {
   background-color: transparent;
   border: none;
 }
-.cid-qCVcbRXhwi .close-sidebar:focus {
-  outline: 2px auto #55b993;
+.cid-qCVUag2Icl .close-sidebar:focus {
+  outline: 2px auto #44f7b3;
 }
-.cid-qCVcbRXhwi .close-sidebar span {
+.cid-qCVUag2Icl .close-sidebar span {
   position: absolute;
   left: 0;
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #44f7b3;
+  background-color: #232323;
 }
-.cid-qCVcbRXhwi .close-sidebar span:nth-child(1) {
+.cid-qCVUag2Icl .close-sidebar span:nth-child(1) {
   transform: rotate(45deg);
 }
-.cid-qCVcbRXhwi .close-sidebar span:nth-child(2) {
+.cid-qCVUag2Icl .close-sidebar span:nth-child(2) {
   transform: rotate(-45deg);
 }
 @media (min-width: 992px) {
-  .cid-qCVcbRXhwi .brand-name {
+  .cid-qCVUag2Icl .brand-name {
     min-width: 8rem;
   }
-  .cid-qCVcbRXhwi .builder-sidebar {
+  .cid-qCVUag2Icl .builder-sidebar {
     margin-left: auto;
   }
-  .cid-qCVcbRXhwi .builder-sidebar .sidebar li {
+  .cid-qCVUag2Icl .builder-sidebar .sidebar li {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .cid-qCVcbRXhwi .builder-sidebar .sidebar li a {
+  .cid-qCVUag2Icl .builder-sidebar .sidebar li a {
     padding: .5rem;
     margin: 0;
   }
-  .cid-qCVcbRXhwi .builder-overlay {
+  .cid-qCVUag2Icl .builder-overlay {
     display: none ;
   }
 }
-.cid-qCVcbRXhwi .hamburger {
+.cid-qCVUag2Icl .hamburger {
   position: absolute;
   top: 40px;
   right: 20px;
@@ -1395,34 +1418,34 @@ blockquote {
   cursor: pointer;
   z-index: 1000;
 }
-.cid-qCVcbRXhwi .hamburger:focus {
+.cid-qCVUag2Icl .hamburger:focus {
   outline: none;
 }
-.cid-qCVcbRXhwi .hamburger span {
+.cid-qCVUag2Icl .hamburger span {
   position: absolute;
   right: 0;
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #44f7b3;
+  background-color: #232323;
 }
-.cid-qCVcbRXhwi .hamburger span:nth-child(1) {
+.cid-qCVUag2Icl .hamburger span:nth-child(1) {
   top: 0;
   transition: all .2s;
 }
-.cid-qCVcbRXhwi .hamburger span:nth-child(2) {
+.cid-qCVUag2Icl .hamburger span:nth-child(2) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCVcbRXhwi .hamburger span:nth-child(3) {
+.cid-qCVUag2Icl .hamburger span:nth-child(3) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qCVcbRXhwi .hamburger span:nth-child(4) {
+.cid-qCVUag2Icl .hamburger span:nth-child(4) {
   top: 16px;
   transition: all .2s;
 }
-.cid-qCVcbRXhwi amp-img {
+.cid-qCVUag2Icl amp-img {
   width: 70px;
   max-height: 70px;
   margin-right: 1rem;
@@ -1430,7 +1453,36 @@ blockquote {
   align-items: center;
 }
 .cid-qCz2RkrM0y {
-  background-image: url("assets/images/background3.jpg");
+  background-image: url("assets/images/mbr-1920x1080.jpg");
+}
+.cid-qCz2RkrM0y H1 {
+  color: #ffffff;
+}
+.cid-qCz2RkrM0y P {
+  color: #ffffff;
+}
+.cid-qCVuDaioPF {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #15181b;
+}
+.cid-qCVuDaioPF .carousel-img {
+  height: 300px;
+  width: 400px;
+}
+.cid-qCVuDaioPF .mbr-figure {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cid-qCVuDaioPF .mbr-figure img {
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .cid-qCVuDaioPF .mbr-figure img {
+    width: 100% ;
+  }
 }
 .cid-qCz2RD8fx1 {
   padding-top: 90px;
@@ -1449,24 +1501,27 @@ blockquote {
  
   <script async  src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   
   
 </head>
-<body><amp-sidebar id="sidebar" class="cid-qCVcbRXhwi" layout="nodisplay" side="right">
+<body><amp-sidebar id="sidebar" class="cid-qCVUag2Icl" layout="nodisplay" side="right">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
                 <span></span>
                 <span></span>
             </button>
 
-            <div class="sidebar" data-app-modern-menu="true"><a class="text-primary display-4" href="https://mobirise.com">Example 1</a>
-              <a class="text-primary display-4" href="https://mobirise.com">Example 2</a>
-              <a class="text-primary display-4" href="https://mobirise.com">Example 3</a></div>
+            <div class="sidebar" data-app-modern-menu="true"><a class="text-black display-4" href="https://mobirise.com">Example 1</a> <a class="text-black display-4" href="https://mobirise.com">Example 1</a>
+              <a class="text-black display-4" href="https://mobirise.com">Example 2</a>
+              <a class="text-black display-4" href="https://mobirise.com">Example 3</a> <a class="text-black display-4" href="https://mobirise.com">Example 3</a></div>
             
-            <div class="navbar-buttons mbr-section-btn align-center"><a class="btn btn-sm btn-white display-4" href="https://mobirise.com">Btn Example</a></div>
+            <div class="navbar-buttons mbr-section-btn align-center">
+              <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Btn Example</a>
+            </div>
         </div>
     </amp-sidebar>
-<section class="menu cid-qCVcbRXhwi" id="menu2-33" data-rv-view="26">
+<section class="menu cid-qCVUag2Icl" id="menu2-3i" data-rv-view="20">
 
     
     <nav class="headerbar sticky-nav">
@@ -1476,7 +1531,7 @@ blockquote {
                   
               </amp-img>
           </span>
-          <div class="brand-name mbr-fonts-style display-2"><a href="#" class="text-primary">Mobirise AMP</a></div>
+          <p class="brand-name mbr-fonts-style display-2">Mobirise AMP</p>
       </div>
     </nav>
     
@@ -1488,7 +1543,7 @@ blockquote {
     </button>
 </section>
 
-<section class="header1 cid-qCz2RkrM0y mbr-fullscreen" id="header1-8" data-rv-view="28">
+<section class="header1 cid-qCz2RkrM0y mbr-fullscreen" id="header1-8" data-rv-view="22">
 
     
 
@@ -1503,7 +1558,23 @@ blockquote {
 
 </section>
 
-<section class="header2 cid-qCz2RD8fx1" id="header2-9" data-rv-view="31">
+<section class="header4 cid-qCVuDaioPF" id="slider1-34" data-rv-view="25">
+
+    
+
+    <div class="mbr-container">
+        <amp-carousel class="carousel" height="300" layout="fixed-height">
+          <amp-img class="carousel-img" src="assets/images/background2.jpg" height="267" width="400" alt="a sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background1.jpg" height="267" width="400" alt="another sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background3.jpg" height="267" width="400" alt="and another sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background2.jpg" height="267" width="400" alt="a sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background1.jpg" height="267" width="400" alt="another sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background3.jpg" height="267" width="400" alt="and another sample image"></amp-img>  
+        </amp-carousel>
+    </div>
+</section>
+
+<section class="header2 cid-qCz2RD8fx1" id="header2-9" data-rv-view="27">
 
     
 
