@@ -16,19 +16,22 @@
         "display1Font": "Playfair Display",
         "display1Size": 5,
         "display2Font": "Montserrat",
-        "display2Size": 1.5,
+        "display2Size": "4",
         "display5Font": "Playfair Display",
         "display5Size": 2.4,
-        "display7Font": "Playfair Display",
+        "display7Font": "Montserrat",
         "display7Size": 1.1,
         "display4Font": "Playfair Display",
         "display4Size": 1.2,
         "isRoundedButtons": false
       },
-      "additionalSetColors": []
+      "additionalSetColors": [
+        "#07060d",
+        "#fff8cc"
+      ]
     },
     "versionFirst": "4.5.1",
-    "uniqCompNum": 9,
+    "uniqCompNum": 11,
     "versionPublish": "4.5.1"
   },
   "pages": {
@@ -97,7 +100,7 @@
               }
             },
             ".brand-name": {
-              "color": "#ffffff"
+              "color": "#fff8cc"
             },
             ".sidebar": {
               "padding": "1rem 0",
@@ -205,13 +208,13 @@
             }
           },
           "_name": "menu2",
-          "_customHTML": "<!-- <amp-sidebar id=\"sidebar1\" layout=\"nodisplay\" side=\"right\" class=\"mbr-black\">\n  <div role=\"button\" aria-label=\"close sidebar\" \n       on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\">\n       <span></span>\n       <span></span>\n  </div>\n  <ul mbr-menu class=\"sidebar\"\n      mbr-theme-style=\"display-4\">\n    <li><a href=\"#\">Example 1</a></li>\n    <li><a href=\"#\">Example 2</a></li>\n    <li><a href=\"#\">Example 3</a></li>\n  </ul>\n</amp-sidebar> -->\n<section class=\"menu\" group=\"Menu\" plugins=\"amp-main,amp-sidebar\" global once=\"menu\" always-top position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\" checked>\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <select title=\"Sidebar Side\" name=\"sidebarSide\">\n            <option value=\"left\">Left</option>\n            <option value=\"right\" selected>Right</option>\n        </select>\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#902413\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <nav class=\"headerbar\" mbr-class=\"{'sticky-nav':sticky}\">\n      <div class=\"brand\">\n          <span mbr-if=\"showLogo\" class=\"brand-logo\">\n              <amp-img src=\"../_images/logo1.png\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"a sample image\">\n                  <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n              </amp-img>\n          </span>\n          <p mbr-text mbr-theme-style=\"display-2\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style\" data-app-selector=\".brand-name\">Mobirise AMP</p>\n      </div>\n    </nav>\n    <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n        <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n            <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n                <span></span>\n                <span></span>\n            </button>\n\n            <div mbr-menu class=\"sidebar\" mbr-theme-style=\"display-4\" mbr-if=\"showLinks\"><a class=\"text-white\" href=\"https://mobirise.com\">Example 1</a> <a class=\"text-white\" href=\"https://mobirise.com\">Example 1</a> \n              \n              <a class=\"text-white\" href=\"https://mobirise.com\">Example 3</a></div>\n            \n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn align-center\"><a class=\"btn btn-sm btn-info\" href=\"https://mobirise.com\">Btn Example</a></div>\n        </div>\n    </amp-sidebar>\n    <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-class=\"{'sticky-but':sticky}\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </button>\n</section>",
-          "_cid": "qCWb5NWDvB",
-          "_anchor": "menu2-5",
+          "_customHTML": "<!-- <amp-sidebar id=\"sidebar1\" layout=\"nodisplay\" side=\"right\" class=\"mbr-black\">\n  <div role=\"button\" aria-label=\"close sidebar\" \n       on=\"tap:sidebar1.toggle\" tabindex=\"0\" class=\"close-sidebar\">\n       <span></span>\n       <span></span>\n  </div>\n  <ul mbr-menu class=\"sidebar\"\n      mbr-theme-style=\"display-4\">\n    <li><a href=\"#\">Example 1</a></li>\n    <li><a href=\"#\">Example 2</a></li>\n    <li><a href=\"#\">Example 3</a></li>\n  </ul>\n</amp-sidebar> -->\n<section class=\"menu\" group=\"Menu\" plugins=\"amp-main,amp-sidebar\" global once=\"menu\" always-top position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\" checked>\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <select title=\"Sidebar Side\" name=\"sidebarSide\">\n            <option value=\"left\">Left</option>\n            <option value=\"right\" selected>Right</option>\n        </select>\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#fff8cc\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <nav class=\"headerbar\" mbr-class=\"{'sticky-nav':sticky}\">\n      <div class=\"brand\">\n          <span mbr-if=\"showLogo\" class=\"brand-logo\">\n              <amp-img src=\"../_images/logo1.png\" layout=\"responsive\" width=\"16\" height=\"9\" alt=\"a sample image\">\n                  <img class=\"mbr-temp\" src=\"../_images/logo1.png\" alt=\"Mobirise\">\n              </amp-img>\n          </span>\n          <p mbr-text mbr-theme-style=\"display-7\" mbr-if=\"showBrand\" class=\"brand-name mbr-fonts-style\" data-app-selector=\".brand-name\">MOBIRISE</p>\n      </div>\n    </nav>\n    <amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n        <div class=\"builder-sidebar\" id=\"builder-sidebar\">\n            <button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n                <span></span>\n                <span></span>\n            </button>\n\n            <div mbr-menu class=\"sidebar\" mbr-theme-style=\"display-4\" mbr-if=\"showLinks\"><a class=\"text-white\" href=\"https://mobirise.com\">Example 1</a>\n              <a class=\"text-white\" href=\"https://mobirise.com\">Example 2</a>\n              <a class=\"text-white\" href=\"https://mobirise.com\">Example 3</a></div>\n            \n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn align-center\"><a class=\"btn btn-sm btn-white\" href=\"https://mobirise.com\">Btn Example</a></div>\n        </div>\n    </amp-sidebar>\n    <button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-class=\"{'sticky-but':sticky}\">\n        <span></span>\n        <span></span>\n        <span></span>\n        <span></span>\n    </button>\n</section>",
+          "_cid": "qCWftICgbX",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {}
+          "_params": {},
+          "_anchor": "menu2-9"
         },
         {
           "_styles": {
@@ -224,16 +227,27 @@
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
+            },
+            "H1": {
+              "color": "#ffffff"
+            },
+            "P": {
+              "color": "#ffffff"
+            },
+            "h1": {
+              "background-color": "rgb(26, 106, 213)"
             }
           },
           "_name": "header1",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#886586\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Google AMP</h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">AMP PROVIDES A GREAT USER EXPERIENCE ACROSS MANY PLATFORMS</h3>\n        <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Full width intro with adjustable height, background image. Click any text to edit or style it.</p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n        </div>\n    </div>\n\n</section>",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1919x1080.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#886586\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Google amp<br></h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">AMP PROVIDES A GREAT USER EXPERIENCE ACROSS MANY PLATFORMS</h3>\n        <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Full width intro with adjustable height, background image. Click any text to edit or style it.</p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n        </div>\n    </div>\n\n</section>",
           "_cid": "qCWb6yIzae",
           "_anchor": "header1-6",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_styles": {
@@ -250,38 +264,28 @@
             ".mbr-subtitle": {
               "color": "#ffffff",
               "margin-bottom": "1rem"
+            },
+            "h2": {
+              "background-color": "rgb(26, 106, 213)"
+            },
+            ".mbr-subtitle,.mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".mbr-text,.mbr-section-btn": {
+              "text-align": "center",
+              "color": "#ffffff"
             }
           },
           "_name": "header4",
-          "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background5.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#15181b\"> \n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-title align-left text-white\" mbr-theme-style=\"display-1\" mbr-if=\"showText\" data-app-selector=\".mbr-text,.mbr-section-btn\">Mobirise AMP Theme</h1>\n        <h2 class=\"mbr-fonts-style mbr-subtitle align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-subtitle,.mbr-section-btn\">Building the future web, together</h2>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-white\" href=\"https://mobirise.com\">TRY IT</a>\n        </div>\n    </div>\n</section>",
-          "_cid": "qCWbkTALPF",
-          "_anchor": "header4-8",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background5.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#15181b\"> \n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-title align-left text-white\" mbr-theme-style=\"display-1\" mbr-if=\"showText\" data-app-selector=\".mbr-text,.mbr-section-btn\">Mobirise AMP Theme</h1>\n        <h2 class=\"mbr-fonts-style mbr-subtitle align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-subtitle,.mbr-section-btn\">Building the future web, together</h2>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-white\" href=\"https://mobirise.com\">TRY IT</a>\n        </div>\n    </div>\n</section>",
+          "_cid": "qCWfTUmmTm",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            }
-          },
-          "_name": "header3",
-          "_customHTML": "<section class=\"header3\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#15181b\" selected=\"\"> \n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-text align-center text-white\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text,.mbr-section-btn\">AMP is built thanks to a deep collaboration with thousands of developers, publishers and<a href=\"https://mobirise.com\" class=\"text-secondary\"><i>websites</i></a>, distribution platforms and tech companies.</h1>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-white\" href=\"https://mobirise.com\">TRY IT</a>\n        </div>\n    </div>\n</section>",
-          "_cid": "qCWbkLkGWS",
-          "_anchor": "header3-7",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "header4-a",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     }
