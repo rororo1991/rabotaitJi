@@ -1321,6 +1321,13 @@ blockquote {
     padding-right: 15px;
     padding-left: 15px;
   }
+  .mbr-col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   .mbr-col-md-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
@@ -1427,11 +1434,12 @@ section.sidebar-open:before {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1040;
 }
-.cid-qD6wbSOGVs amp-sidebar {
+.cid-qD7KYf8V3l amp-sidebar {
   min-width: 260px;
   z-index: 1050;
+  background-color: #15181b;
 }
-.cid-qD6wbSOGVs amp-sidebar.open:after {
+.cid-qD7KYf8V3l amp-sidebar.open:after {
   content: '';
   position: absolute;
   top: 0;
@@ -1440,65 +1448,63 @@ section.sidebar-open:before {
   right: 0;
   background-color: red;
 }
-.cid-qD6wbSOGVs .open {
+.cid-qD7KYf8V3l .open {
   transform: translateX(0%) ;
   display: block;
 }
-.cid-qD6wbSOGVs .builder-sidebar {
-  background-color: #333333;
+.cid-qD7KYf8V3l .builder-sidebar {
+  background-color: #15181b;
   position: relative;
   height: 100vh;
   z-index: 1030;
   padding: 1rem 2rem;
   max-width: 20rem;
 }
-.cid-qD6wbSOGVs .headerbar {
+.cid-qD7KYf8V3l .headerbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
-  min-height: 100px;
+  padding: .5rem 1rem;
+  min-height: 70px;
   align-items: center;
-  background: #333333;
+  background: #15181b;
 }
-.cid-qD6wbSOGVs .headerbar.sticky-nav {
+.cid-qD7KYf8V3l .headerbar.sticky-nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
 }
-.cid-qD6wbSOGVs button.sticky-but {
+.cid-qD7KYf8V3l button.sticky-but {
   position: fixed;
 }
-.cid-qD6wbSOGVs .brand {
+.cid-qD7KYf8V3l .brand {
   display: flex;
   align-items: center;
+  align-self: flex-start;
+  padding-right: 30px;
 }
-.cid-qD6wbSOGVs .brand p {
+.cid-qD7KYf8V3l .brand p {
   margin: 0;
+  padding: 0;
 }
-@media (max-width: 991px) {
-  .cid-qD6wbSOGVs .brand {
-    align-self: flex-start;
-  }
-}
-.cid-qD6wbSOGVs .brand-name {
+.cid-qD7KYf8V3l .brand-name {
   color: #ffffff;
 }
-.cid-qD6wbSOGVs .sidebar {
+.cid-qD7KYf8V3l .sidebar {
   padding: 1rem 0;
   margin: 0;
 }
-.cid-qD6wbSOGVs .sidebar > li {
+.cid-qD7KYf8V3l .sidebar > li {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.cid-qD6wbSOGVs .sidebar a {
+.cid-qD7KYf8V3l .sidebar a {
   display: block;
   text-decoration: none;
   margin-bottom: 10px;
 }
-.cid-qD6wbSOGVs .close-sidebar {
+.cid-qD7KYf8V3l .close-sidebar {
   width: 30px;
   height: 30px;
   position: relative;
@@ -1506,10 +1512,10 @@ section.sidebar-open:before {
   background-color: transparent;
   border: none;
 }
-.cid-qD6wbSOGVs .close-sidebar:focus {
+.cid-qD7KYf8V3l .close-sidebar:focus {
   outline: 2px auto #dd4f39;
 }
-.cid-qD6wbSOGVs .close-sidebar span {
+.cid-qD7KYf8V3l .close-sidebar span {
   position: absolute;
   left: 0;
   width: 30px;
@@ -1517,34 +1523,34 @@ section.sidebar-open:before {
   border-right: 5px;
   background-color: #ffffff;
 }
-.cid-qD6wbSOGVs .close-sidebar span:nth-child(1) {
+.cid-qD7KYf8V3l .close-sidebar span:nth-child(1) {
   transform: rotate(45deg);
 }
-.cid-qD6wbSOGVs .close-sidebar span:nth-child(2) {
+.cid-qD7KYf8V3l .close-sidebar span:nth-child(2) {
   transform: rotate(-45deg);
 }
 @media (min-width: 992px) {
-  .cid-qD6wbSOGVs .brand-name {
+  .cid-qD7KYf8V3l .brand-name {
     min-width: 8rem;
   }
-  .cid-qD6wbSOGVs .builder-sidebar {
+  .cid-qD7KYf8V3l .builder-sidebar {
     margin-left: auto;
   }
-  .cid-qD6wbSOGVs .builder-sidebar .sidebar li {
+  .cid-qD7KYf8V3l .builder-sidebar .sidebar li {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .cid-qD6wbSOGVs .builder-sidebar .sidebar li a {
+  .cid-qD7KYf8V3l .builder-sidebar .sidebar li a {
     padding: .5rem;
     margin: 0;
   }
-  .cid-qD6wbSOGVs .builder-overlay {
+  .cid-qD7KYf8V3l .builder-overlay {
     display: none ;
   }
 }
-.cid-qD6wbSOGVs .hamburger {
+.cid-qD7KYf8V3l .hamburger {
   position: absolute;
-  top: 40px;
+  top: 25px;
   right: 20px;
   margin-left: auto;
   width: 30px;
@@ -1554,10 +1560,15 @@ section.sidebar-open:before {
   cursor: pointer;
   z-index: 1000;
 }
-.cid-qD6wbSOGVs .hamburger:focus {
+@media (min-width: 768px) {
+  .cid-qD7KYf8V3l .hamburger {
+    top: calc(0.5rem + 55 * 0.5px - 10px);
+  }
+}
+.cid-qD7KYf8V3l .hamburger:focus {
   outline: none;
 }
-.cid-qD6wbSOGVs .hamburger span {
+.cid-qD7KYf8V3l .hamburger span {
   position: absolute;
   right: 0;
   width: 30px;
@@ -1565,83 +1576,1141 @@ section.sidebar-open:before {
   border-right: 5px;
   background-color: #ffffff;
 }
-.cid-qD6wbSOGVs .hamburger span:nth-child(1) {
+.cid-qD7KYf8V3l .hamburger span:nth-child(1) {
   top: 0;
   transition: all .2s;
 }
-.cid-qD6wbSOGVs .hamburger span:nth-child(2) {
+.cid-qD7KYf8V3l .hamburger span:nth-child(2) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qD6wbSOGVs .hamburger span:nth-child(3) {
+.cid-qD7KYf8V3l .hamburger span:nth-child(3) {
   top: 8px;
   transition: all .15s;
 }
-.cid-qD6wbSOGVs .hamburger span:nth-child(4) {
+.cid-qD7KYf8V3l .hamburger span:nth-child(4) {
   top: 16px;
   transition: all .2s;
 }
-.cid-qD6wbSOGVs amp-img {
-  width: 70px;
-  max-height: 70px;
+.cid-qD7KYf8V3l amp-img {
+  height: 55px;
+  width: 55px;
   margin-right: 1rem;
   display: flex;
   align-items: center;
 }
-.cid-qD6wcd6FMP {
-  background-image: url("assets/images/mbr-1-1620x1080.jpg");
+@media (max-width: 768px) {
+  .cid-qD7KYf8V3l amp-img {
+    max-height: 55px;
+    max-width: 55px;
+  }
 }
-.cid-qD6wcd6FMP H1 {
-  color: #ffe640;
+.cid-qD7KYobfZz {
+  background-image: url("assets/images/background32.jpg");
 }
-.cid-qD6wcd6FMP P {
+.cid-qD7KYIovz3 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f1f1f1;
+}
+.cid-qD7KYIovz3 .mbr-section-btn {
+  margin-bottom: 20px;
+}
+.cid-qD7KYIovz3 amp-img {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.cid-qD7KZh1PbF {
+  background-color: #15181b;
+}
+.cid-qD7KZxC4d4 {
+  background-image: url("assets/images/background5.jpg");
+}
+.cid-qD7KZxC4d4 .mbr-section-subtitle {
+  margin-bottom: 1rem;
+}
+.cid-qD7KZVsWsV {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #15181b;
+}
+.cid-qD7KZVsWsV .carousel-img {
+  height: 300px;
+  width: 400px;
+}
+.cid-qD7KZVsWsV .mbr-figure {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cid-qD7KZVsWsV .mbr-figure img {
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .cid-qD7KZVsWsV .mbr-figure img {
+    width: 100% ;
+  }
+}
+.cid-qD7L0biRjo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #15181b;
+}
+.cid-qD7L0biRjo .carousel-img {
+  width: 100%;
+}
+.cid-qD7L0biRjo .mbr-figure {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cid-qD7L0biRjo .mbr-figure img {
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .cid-qD7L0biRjo .mbr-figure img {
+    width: 100% ;
+  }
+}
+.cid-qD7L1BVlV0 {
+  background-color: #efefef;
+}
+.cid-qD7L1BVlV0 .image-block {
+  margin: auto;
+  position: relative;
+  width: 66%;
+  width: 100% ;
+}
+.cid-qD7L1BVlV0 amp-img {
+  text-align: center;
+}
+.cid-qD7L1BVlV0 .mbr-text {
+  margin: 0;
+  padding: .5rem 0;
+  padding: .5rem 15px;
+}
+@media (max-width: 767px) {
+  .cid-qD7L1BVlV0 .image-block {
+    width: 100% ;
+  }
+}
+.cid-qD7L1Qsgi2 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #ffffff;
+}
+.cid-qD7L1Qsgi2 .mbr-text {
+  padding-right: 2rem;
+}
+.cid-qD7L1Qsgi2 .image-block {
+  width: 50%;
+}
+.cid-qD7L1Qsgi2 .mbr-figure-caption {
+  width: 25%;
+}
+.cid-qD7L1Qsgi2 .mbr-text {
+  color: #767676;
+  margin: 0;
+}
+.cid-qD7L1Qsgi2 amp-img {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .cid-qD7L1Qsgi2 .image-block {
+    width: 100% ;
+  }
+  .cid-qD7L1Qsgi2 .mbr-figure-caption {
+    width: 100%;
+  }
+  .cid-qD7L1Qsgi2 .mbr-text {
+    padding: .5rem 0;
+  }
+}
+.cid-qD7L2bgbX4 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #efefef;
+}
+.cid-qD7L2bgbX4 .mbr-text {
+  padding-left: 2rem;
+}
+.cid-qD7L2bgbX4 .image-block {
+  width: 75%;
+}
+.cid-qD7L2bgbX4 .mbr-figure-caption {
+  width: 25%;
+}
+.cid-qD7L2bgbX4 .mbr-text {
+  color: #767676;
+  margin: 0;
+}
+.cid-qD7L2bgbX4 amp-img {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .cid-qD7L2bgbX4 .image-block {
+    width: 100% ;
+  }
+  .cid-qD7L2bgbX4 .mbr-figure-caption {
+    width: 100%;
+  }
+  .cid-qD7L2bgbX4 .mbr-text {
+    padding: .5rem 0;
+  }
+}
+.cid-qD7L2ssQYZ {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  background-color: #efefef;
+}
+.cid-qD7L2ssQYZ .image-block {
+  width: 50%;
+  margin: auto;
+}
+.cid-qD7L2ssQYZ .mbr-figure-caption {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .cid-qD7L2ssQYZ .first-image {
+    margin-bottom: 2rem;
+  }
+}
+.cid-qD7L2ssQYZ .image-block {
+  width: 100% ;
+}
+.cid-qD7L2ssQYZ .mbr-text {
+  padding: 1rem ;
+  margin: 0;
+}
+.cid-qD7L2ssQYZ amp-img {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .cid-qD7L2ssQYZ .image-block {
+    width: 100% ;
+  }
+}
+.cid-qD7L2LWwO2 {
+  background-color: #ffffff;
+}
+.cid-qD7L2LWwO2 .video-block {
+  margin: auto;
+  width: 66%;
+  width: 100% ;
+}
+@media (max-width: 767px) {
+  .cid-qD7L2LWwO2 .video-block {
+    width: 100% ;
+  }
+}
+.cid-qD7L3d4YOg {
+  background-color: #ffffff;
+}
+.cid-qD7L3d4YOg .video-block {
+  margin: auto;
+  width: 66%;
+  width: 100% ;
+}
+@media (max-width: 767px) {
+  .cid-qD7L3d4YOg .video-block {
+    width: 100% ;
+  }
+}
+.cid-qD7L3rn161 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f9f9f9;
+}
+.cid-qD7L3rn161 .card {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: .25rem;
+  width: 100%;
+  min-height: 1px;
+}
+.cid-qD7L3rn161 .card-title {
+  margin: 0;
+}
+.cid-qD7L3rn161 .mbr-text {
+  color: #767676;
+}
+.cid-qD7L3rn161 .card-box {
+  padding-top: 2rem;
+}
+.cid-qD7L3rn161 amp-img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .cid-qD7L3rn161 .card {
+    margin-bottom: 2rem;
+  }
+}
+.cid-qD7L3Qe224 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f9f9f9;
+}
+.cid-qD7L3Qe224 .card {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0;
+  width: 100%;
+  min-height: 1px;
+}
+.cid-qD7L3Qe224 .card .btn {
+  margin: .4rem 4px ;
+}
+.cid-qD7L3Qe224 .card-title {
+  margin: 0;
+}
+.cid-qD7L3Qe224 .mbr-text {
+  color: #767676;
+}
+.cid-qD7L3Qe224 .card-box {
+  padding-top: 2rem;
+}
+.cid-qD7L3Qe224 amp-img {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-qD7L3Qe224 .card:nth-child(2) {
+    border-right: 2px solid #efefef;
+  }
+}
+@media (max-width: 767px) {
+  .cid-qD7L3Qe224 .card {
+    margin-bottom: 2rem;
+    border: none ;
+  }
+}
+@media (min-width: 768px) {
+  .cid-qD7L3Qe224 .card {
+    border-left: 2px solid #efefef;
+  }
+  .cid-qD7L3Qe224 .card.last-child {
+    border-right: 2px solid #efefef;
+  }
+}
+.cid-qD7L4eyOUy {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-qD7L4eyOUy .mb4rem {
+  margin-bottom: 4rem ;
+}
+.cid-qD7L4eyOUy .mbr-section-btn {
+  padding-top: 1rem;
+}
+.cid-qD7L4eyOUy .mbr-section-title {
+  margin-bottom: .5rem;
+}
+.cid-qD7L4eyOUy .mbr-card-title {
+  margin: 0;
+}
+.cid-qD7L4eyOUy .mbr-text {
+  margin: 0;
+}
+.cid-qD7L4eyOUy .card {
+  padding: 1rem;
+  border-radius: 0;
+  margin-bottom: 2rem;
+}
+.cid-qD7L4eyOUy .card1 .mbr-card-title {
   color: #ffffff;
 }
-.cid-qD6SquLH60 {
+.cid-qD7L4eyOUy .card2 .mbr-card-title {
+  color: #5b686b;
+}
+.cid-qD7L4eyOUy .card3 .mbr-card-title {
+  color: #232323;
+}
+.cid-qD7L4eyOUy .card4 .mbr-card-title {
+  color: #ffffff;
+}
+.cid-qD7L4eyOUy .card1 {
+  background: #15181b;
+}
+.cid-qD7L4eyOUy .card2 {
+  background: #e0e0e0;
+}
+.cid-qD7L4eyOUy .card3 {
+  background: #dd5039;
+}
+.cid-qD7L4eyOUy .card4 {
+  background: #b2ccd2;
+}
+@media (min-width: 768px) {
+  .cid-qD7L4eyOUy {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .cid-qD7L4eyOUy .card {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-qD7L4eyOUy .card {
+    margin-bottom: 0;
+  }
+}
+.cid-qD7L4FyoUH {
+  background-color: #efefef;
+}
+.cid-qD7L4FyoUH .text-block {
+  margin: auto;
+}
+.cid-qD7L4FyoUH amp-img {
+  text-align: center;
+}
+.cid-qD7L4SXWvy {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-qD7L4SXWvy .mb4rem {
+  margin-bottom: 4rem ;
+}
+.cid-qD7L4SXWvy .mbr-card-title {
+  color: #232323;
+  width: 100%;
+}
+.cid-qD7L4SXWvy .mbr-section-btn {
+  padding-top: 1rem;
+}
+.cid-qD7L4SXWvy .mbr-text {
+  margin: 0;
+  color: #232323;
+}
+.cid-qD7L4SXWvy .card {
+  padding: 1rem;
+  border-radius: 0;
+  margin-bottom: 2rem;
+  background: #dd4f39;
+}
+@media (min-width: 768px) {
+  .cid-qD7L4SXWvy {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .cid-qD7L4SXWvy .card {
+    padding: 3rem 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-qD7L4SXWvy .card {
+    margin-bottom: 0;
+    padding: 8rem 8rem;
+  }
+}
+.cid-qD7L5hOHM1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #15181b;
+}
+.cid-qD7L5hOHM1 .mbr-section-title {
+  color: #ffde00;
+}
+.cid-qD7L5hOHM1 .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.cid-qD7L5hOHM1 .justify-content-center {
+  justify-content: center;
+}
+.cid-qD7L5hOHM1 .text-block {
+  margin: auto;
+}
+.cid-qD7L5hOHM1 amp-img {
+  text-align: center;
+}
+.cid-qD7L5tlYTe {
+  background-color: #f9f9f9;
+}
+.cid-qD7L5tlYTe .mbr-row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.cid-qD7L5tlYTe .card {
+  background: #ffffff;
+  border-radius: 0;
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 ;
+}
+@media (min-width: 768px) {
+  .cid-qD7L5tlYTe .card:not(:first-child) .card-wrapper {
+    border-left: 1px solid #cccccc;
+  }
+  .cid-qD7L5tlYTe .card:not(:first-child) .card-wrapper .card-img {
+    width: calc(100% + 1px);
+    margin-left: -1px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-qD7L5tlYTe .card:last-child .card-wrapper {
+    border: none;
+  }
+}
+.cid-qD7L5tlYTe .card-wrapper {
+  height: 100%;
+}
+.cid-qD7L5tlYTe .card-title {
+  margin: 0;
+}
+.cid-qD7L5tlYTe .mbr-text {
+  color: #767676;
+}
+.cid-qD7L5tlYTe .card-box {
+  padding: 2rem;
+}
+.cid-qD7L5tlYTe amp-img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .cid-qD7L5tlYTe .card {
+    margin-bottom: 2rem;
+  }
+}
+.cid-qD7L5ZF0e8 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qD7L5ZF0e8 .text-block {
+  margin: auto;
+}
+.cid-qD7L5ZF0e8 amp-img {
+  text-align: center;
+}
+.cid-qD7L6aLUAd {
+  padding-top: 105px;
+  padding-bottom: 105px;
+  background-color: #15181b;
+}
+.cid-qD7L6aLUAd .num-title {
+  color: #dd4f39;
+}
+.cid-qD7L6aLUAd .mbr-title {
+  letter-spacing: 5px;
+}
+.cid-qD7L6aLUAd .section-header {
+  padding-bottom: 3rem;
+}
+.cid-qD7L6aLUAd .social-wrapper {
+  padding-top: 2rem;
+  text-align: center;
+}
+.cid-qD7L6aLUAd amp-social-share {
+  height: 50px ;
+  width: 50px ;
+  border-radius: 30px;
+  margin: .5rem;
+  background-size: 70%;
+}
+.cid-qD7L6aLUAd .mbr-section-subtitle {
+  padding-bottom: 1rem;
+  letter-spacing: 3px;
+  color: #a0a0a0;
+}
+.cid-qD7L6lRTeU {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f9f9f9;
+}
+.cid-qD7L6lRTeU .card {
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  width: 100%;
+  min-height: 1px;
+}
+.cid-qD7L6lRTeU .card .card-wrapper {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.cid-qD7L6lRTeU .card-title {
+  margin: 0;
+}
+.cid-qD7L6lRTeU .card-box {
+  padding-top: 2rem;
+}
+.cid-qD7L6lRTeU .first-column .card-wrapper {
+  border-left: 1px solid #cccccc;
+}
+.cid-qD7L6lRTeU .card-pb .card {
+  padding-bottom: 60%;
+}
+.cid-qD7L6lRTeU .second-column {
+  border-left: 1px solid #cccccc;
+}
+.cid-qD7L6lRTeU .second-column .card {
+  padding-top: 60%;
+}
+.cid-qD7L6lRTeU .second-column .card .card-wrapper {
+  border-right: 1px solid #cccccc;
+}
+.cid-qD7L6lRTeU amp-img {
+  width: 100%;
+}
+.cid-qD7L6lRTeU .amp-notsupported .temp-amp-sizer {
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .cid-qD7L6lRTeU .card {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+  }
+  .cid-qD7L6lRTeU .card .card-wrapper {
+    border-left: 1px solid #cccccc;
+    border-right: none ;
+  }
+  .cid-qD7L6lRTeU .second-column {
+    border: none;
+  }
+}
+.cid-qD7L6L7PGq {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qD7L6L7PGq .underline {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.cid-qD7L6L7PGq .underline .line {
+  width: 5rem;
+  height: 1px;
+  background: #494949;
+  display: inline-block;
+}
+.cid-qD7L6L7PGq .card {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0;
+  width: 100%;
+  min-height: 1px;
+}
+.cid-qD7L6L7PGq .card .card-wrapper {
+  background: #e0e0e0;
+  padding-top: 3rem;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .cid-qD7L6L7PGq .card .card-wrapper {
+    padding-top: 1rem;
+  }
+}
+.cid-qD7L6L7PGq .card-img amp-img {
+  border-radius: 50%;
+  width: 50%;
+  margin: auto;
+}
+.cid-qD7L6L7PGq .card-title {
+  margin: 0;
+}
+.cid-qD7L6L7PGq .mbr-text {
+  color: #232323;
+  margin: 0;
+}
+.cid-qD7L6L7PGq .card-subtitle {
+  letter-spacing: 3px;
+  color: #494949;
+  font-weight: 500;
+}
+.cid-qD7L6L7PGq .card-box {
+  padding: 3rem 4rem;
+}
+@media (max-width: 991px) {
+  .cid-qD7L6L7PGq .card-box {
+    padding: 1rem 2rem;
+  }
+}
+.cid-qD7L6L7PGq amp-img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .cid-qD7L6L7PGq .card {
+    margin-bottom: 2rem;
+  }
+  .cid-qD7L6L7PGq .mbr-row {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+.cid-qD7L6UHOJr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qD7L6UHOJr .underline {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.cid-qD7L6UHOJr .underline .line {
+  width: 5rem;
+  height: 3px;
+  background: #494949;
+  display: inline-block;
+}
+.cid-qD7L6UHOJr .mbr-row {
+  margin: 0 15px;
+}
+.cid-qD7L6UHOJr .card {
+  padding-right: 10px ;
+  padding-left: 10px ;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0;
+  width: 100%;
+  min-height: 1px;
+}
+.cid-qD7L6UHOJr .card .card-wrapper {
+  background: #e0e0e0;
+  padding-top: 3rem;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .cid-qD7L6UHOJr .card .card-wrapper {
+    padding-top: 1rem;
+  }
+}
+.cid-qD7L6UHOJr .card:hover .card-img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  transition: all .5s;
+}
+.cid-qD7L6UHOJr .card-img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: gray;
+}
+.cid-qD7L6UHOJr .card-img amp-img {
+  border-radius: 50%;
+  width: 50%;
+  margin: auto;
+}
+.cid-qD7L6UHOJr .card-subtitle {
+  letter-spacing: 3px;
+  color: #494949;
+  font-weight: 500;
+}
+.cid-qD7L6UHOJr .card-title {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.cid-qD7L6UHOJr .mbr-text {
+  color: #767676;
+  margin: 0;
+}
+.cid-qD7L6UHOJr .card-box {
+  padding: 2rem 2rem 3rem 2rem;
+}
+@media (max-width: 991px) {
+  .cid-qD7L6UHOJr .card-box {
+    padding: 1rem 2rem;
+  }
+}
+.cid-qD7L6UHOJr amp-img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .cid-qD7L6UHOJr .card {
+    margin-bottom: 2rem;
+  }
+}
+.cid-qD7L7eJaer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #ffffff;
 }
-.cid-qD6SquLH60 h1 {
+.cid-qD7L7eJaer .accordion {
+  padding: 0 15px;
+}
+.cid-qD7L7eJaer .accordion section {
+  margin-top: -1px;
+}
+.cid-qD7L7eJaer h4,
+.cid-qD7L7eJaer p {
+  padding: 20px;
+  background-color: #fff;
+}
+.cid-qD7L7eJaer h4 {
+  z-index: 2;
+  color: #505050;
+}
+.cid-qD7L7eJaer h4:focus {
+  z-index: 3;
+  outline: 1px solid #dd4f39;
+}
+.cid-qD7L7eJaer p {
+  z-index: 1;
+  background-color: #f9f9f9;
+  box-shadow: inset 1px 36px 20px -30px rgba(121, 121, 121, 0.13);
+}
+.cid-qD7L83EqKL {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7L83EqKL .mbr-section-title {
+  padding-bottom: 1rem;
+}
+.cid-qD7L83EqKL .mbr-section-subtitle {
+  color: #15181b;
+}
+.cid-qD7L8ic1Jx {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7L8ic1Jx .card {
+  padding: 16px;
+  align-self: center;
+}
+.cid-qD7L8wjlyi {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7L8wjlyi .mbr-text {
+  margin-bottom: 0;
+}
+.cid-qD7L8wjlyi .mbr-section-title {
+  margin: 0;
+}
+.cid-qD7L8PqJiX {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7L919e61 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qD7L919e61 .mbr-text {
+  padding: 2rem 0;
+}
+.cid-qD7L9ekRFf {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7L9ekRFf .counter-container {
+  color: #15181b;
+}
+.cid-qD7L9ekRFf .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-qD7L9ekRFf .counter-container ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.cid-qD7L9ekRFf .counter-container ul li:before {
+  position: absolute;
+  left: 0px;
+  margin-top: -10px;
+  padding-top: 3px;
+  content: '';
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  line-height: 20px;
+  transition: all .2s;
+  color: #ffffff;
+  background: #dd5039;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-radius: 0;
+}
+.cid-qD7L9IdwSB {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7L9IdwSB .counter-container {
+  color: #767676;
+}
+.cid-qD7L9IdwSB .counter-container ol {
+  margin-bottom: 0;
+  counter-reset: myCounter;
+}
+.cid-qD7L9IdwSB .counter-container ol li {
+  margin-bottom: 2rem;
+}
+.cid-qD7L9IdwSB .counter-container ol li {
+  z-index: 3;
+  list-style: none;
+  padding-left: .5rem;
+}
+.cid-qD7L9IdwSB .counter-container ol li:before {
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  text-align: center;
+  margin: 0 10px;
+  line-height: 40px;
+  transition: all .2s;
+  color: #dd5039;
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.cid-qD7L9UBNsC {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7L9UBNsC .counter-container {
+  color: #767676;
+}
+.cid-qD7L9UBNsC .counter-container ol {
+  margin-bottom: 0;
+  counter-reset: myCounter;
+}
+.cid-qD7L9UBNsC .counter-container ol li {
+  margin-bottom: 2rem;
+}
+.cid-qD7L9UBNsC .counter-container ol li {
+  z-index: 3;
+  list-style: none;
+  padding-left: .5rem;
+}
+.cid-qD7L9UBNsC .counter-container ol li:before {
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  text-align: center;
+  margin: 0 10px;
+  line-height: 40px;
+  transition: all .2s;
+  color: #a0a0a0;
+  font-size: 10rem;
+  font-weight: bold;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+.cid-qD7Lai12OU {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7LaQd8LW {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7LaQd8LW blockquote {
+  border-color: #767676;
+}
+.cid-qD7Lb258eX {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qD7Lb258eX .mbr-text {
+  padding: 2rem 0;
+  position: relative;
+  margin: auto;
+}
+.cid-qD7Lb258eX .mbr-text::before {
+  top: -40px;
+  content: '“';
+}
+.cid-qD7Lb258eX .mbr-text::after {
+  content: '”';
+  bottom: -80px;
+}
+.cid-qD7Lb258eX .mbr-text::before,
+.cid-qD7Lb258eX .mbr-text::after {
+  position: absolute;
+  color: #232323;
+  font-size: 5rem;
+  left: 47%;
+}
+@media (max-width: 767px) {
+  .cid-qD7Lb258eX .mbr-text::before,
+  .cid-qD7Lb258eX .mbr-text::after {
+    display: none;
+  }
+}
+.cid-qD7LbevPzR {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f19814;
+}
+.cid-qD7LbevPzR .mbr-text {
+  margin: 0;
+  letter-spacing: 2px;
+}
+.cid-qD7LbevPzR .mbr-section-title {
+  padding-bottom: 1rem;
+  margin: 0;
+}
+.cid-qD7LbevPzR .mbr-section-btn {
+  padding-top: 1rem;
+}
+.cid-qD7LbEKgDK {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qD7LbEKgDK .first-card-title,
+.cid-qD7LbEKgDK .second-card-title {
+  margin: 1rem;
+}
+.cid-qD7LbEKgDK .first-card,
+.cid-qD7LbEKgDK .second-card {
+  padding: 3rem;
+}
+.cid-qD7LbEKgDK .first-card {
+  background: #000000;
+}
+.cid-qD7LbEKgDK .second-card {
+  background: #ffffff;
+}
+@media (max-width: 767px) {
+  .cid-qD7LbEKgDK .first-card,
+  .cid-qD7LbEKgDK .second-card {
+    padding: 1rem;
+  }
+}
+.cid-qD7LcqqGAB {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-qD7LcqqGAB h1 {
   margin-bottom: 20px;
 }
-.cid-qD6SquLH60 .wrapper {
+.cid-qD7LcqqGAB .wrapper {
   text-align: center;
 }
 @media (max-width: 768px) {
-  .cid-qD6SquLH60 .image-block {
+  .cid-qD7LcqqGAB .image-block {
     width: 100% ;
   }
+}
+.cid-qD7Ld32XxC {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qD7Ld32XxC .items-col {
+  margin-bottom: 2rem;
+  border-right: 2px solid #efefef;
+}
+.cid-qD7Ld32XxC .items-col:first-child {
+  border-left: 2px solid #efefef;
+}
+.cid-qD7Ld32XxC .items-col .item {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .cid-qD7Ld32XxC .items-col {
+    text-align: center;
+    border-left: 2px solid #efefef;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-qD7Ld32XxC .items-col:nth-child(4) {
+    border-left: 2px solid #efefef;
+  }
+}
+.cid-qD7LcMd3yW {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #15181b;
+}
+.cid-qD7LcMd3yW p {
+  color: #ffffff;
 }
 </style>
  
   <script async  src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   
   
 </head>
-<body><amp-sidebar id="sidebar" class="cid-qD6wbSOGVs" layout="nodisplay" side="right">
+<body><amp-sidebar id="sidebar" class="cid-qD7KYf8V3l" layout="nodisplay" side="right">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
                 <span></span>
                 <span></span>
             </button>
 
-            <div class="sidebar" data-app-modern-menu="true"><a class="text-white display-7" href="https://mobirise.com">Example 1</a>
+            <div class="sidebar mbr-white" data-app-modern-menu="true">
+              <a class="text-white display-7" href="https://mobirise.com">Example 1</a>
               <a class="text-white display-7" href="https://mobirise.com">Example 2</a>
-              <a class="text-white display-7" href="https://mobirise.com">Example 3</a></div>
+              <a class="text-white display-7" href="https://mobirise.com">Example 3</a>
+            </div>
             
-            <div class="navbar-buttons mbr-section-btn align-center"><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">BTN EXAMPLE</a></div>
+            <div class="navbar-buttons mbr-section-btn align-center">
+              <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">BTN EXAMPLE</a>
+            </div>
         </div>
     </amp-sidebar>
-<section class="menu cid-qD6wbSOGVs" id="menu2-0" data-rv-view="20">
-
+<section class="menu cid-qD7KYf8V3l" id="menu1-0" data-rv-view="369">
     
     <nav class="headerbar sticky-nav">
       <div class="brand">
           <span class="brand-logo">
-              <amp-img src="assets/images/logo1.png" layout="responsive" width="70" height="69" alt="a sample image">
+              <amp-img src="assets/images/logo1.png" layout="responsive" width="55" height="55" alt="a sample image">
                   
               </amp-img>
           </span>
@@ -1657,12 +2726,12 @@ section.sidebar-open:before {
     </button>
 </section>
 
-<section class="header1 cid-qD6wcd6FMP mbr-fullscreen" id="header1-1" data-rv-view="22">
+<section class="header1 cid-qD7KYobfZz mbr-fullscreen" id="header1-1" data-rv-view="371">
 
     
 
     <div class="container">
-        <h1 class="mbr-fonts-style align-center display-1"><strong>Google AMP</strong></h1>
+        <h1 class="mbr-section-title mbr-fonts-style align-center mbr-bold display-1">Google AMP</h1>
         
         <p class="mbr-fonts-style mbr-text align-center display-7">Full width intro with adjustable height, background image. Click any text to edit or style it.</p>
         <div class="mbr-section-btn align-center">
@@ -1672,7 +2741,926 @@ section.sidebar-open:before {
 
 </section>
 
-<section class="social-share cid-qD6SquLH60" id="social-share-2" data-rv-view="24">
+<section class="header2 cid-qD7KYIovz3" id="header2-2" data-rv-view="373">
+
+    
+
+    <div class="container">
+        <h1 class="mbr-fonts-style align-center mbr-bold display-1">Mobirise AMP</h1>
+        <h3 class="mbr-fonts-style align-center display-2">ACCELERATED MOBILE PAGES BY GOOGLE</h3>
+        <div class="mbr-text align-center">
+            <p class="mbr-text mbr-fonts-style display-7">Intro with background image and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.</p>
+        </div>
+        <div class="mbr-section-btn align-center">
+            <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
+        </div>
+
+        <amp-img src="assets/images/amp-phone.jpg" alt="a sample image" width="688" height="387" layout="responsive">
+            
+        </amp-img>
+    </div>
+
+</section>
+
+<section class="header3 cid-qD7KZh1PbF mbr-fullscreen" id="header3-3" data-rv-view="375">
+
+    
+
+    <div class="container">
+        <h1 class="mbr-fonts-style mbr-section-title align-center text-white display-1">Noteworthy AMP pages on the web, using key<a href="https://mobirise.com" class="text-secondary">AMP</a>features.</h1>
+        
+    </div>
+</section>
+
+<section class="header4 cid-qD7KZxC4d4 mbr-fullscreen" id="header4-4" data-rv-view="377">
+
+    
+
+    <div class="container">
+        <h1 class="mbr-fonts-style mbr-section-title align-left mbr-white mbr-bold display-1">Mobirise AMP Theme</h1>
+        <h2 class="mbr-fonts-style mbr-section-subtitle align-left mbr-white display-2">Building the future web, together</h2>
+        
+    </div>
+</section>
+
+<section class="slider1 cid-qD7KZVsWsV" id="slider1-5" data-rv-view="379">
+
+    
+
+    <div class="container">
+        <amp-carousel class="carousel" height="300" layout="fixed-height">
+          <amp-img class="carousel-img" src="assets/images/background2.jpg" height="267" width="400" alt="a sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background1.jpg" height="267" width="400" alt="another sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background3.jpg" height="267" width="400" alt="and another sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background2.jpg" height="267" width="400" alt="a sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background1.jpg" height="267" width="400" alt="another sample image"></amp-img>
+          <amp-img class="carousel-img" src="assets/images/background3.jpg" height="267" width="400" alt="and another sample image"></amp-img>  
+        </amp-carousel>
+    </div>
+</section>
+
+<section class="slider1 cid-qD7L0biRjo" id="slider2-6" data-rv-view="381">
+
+    
+
+    <div class="container">
+        <amp-carousel class="carousel" height="300" width="500" layout="responsive" autoplay="" delay="2000" type="slides">
+            <amp-img class="carousel-img" src="assets/images/background2.jpg" height="0" width="0" layout="responsive" alt="a sample image">
+                
+            </amp-img>
+            <amp-img class="carousel-img" src="assets/images/background1.jpg" height="0" width="0" layout="responsive" alt="another sample image">
+                
+            </amp-img>
+            <amp-img class="carousel-img" src="assets/images/background3.jpg" height="0" width="0" layout="responsive" alt="and another sample image">
+                     
+            </amp-img>
+            <amp-img class="carousel-img" src="assets/images/background2.jpg" height="0" width="0" layout="responsive" alt="a sample image">
+                
+            </amp-img>
+            <amp-img class="carousel-img" src="assets/images/background1.jpg" height="0" width="0" layout="responsive" alt="another sample image">
+                
+            </amp-img>
+            <amp-img class="carousel-img" src="assets/images/background3.jpg" height="0" width="0" layout="responsive" alt="and another sample image">
+                
+            </amp-img>  
+        </amp-carousel>
+    </div>
+</section>
+
+<section class="image1 cid-qD7L1BVlV0" id="image1-7" data-rv-view="383">
+
+    
+
+    <div>
+        <div class="image-block">
+            <amp-img src="assets/images/background4.jpg" layout="responsive" width="921" height="614" alt="a sample image">
+                
+            </amp-img>
+            <div class="mbr-figure-caption">
+                <p class="mbr-text mbr-black align-center mbr-fonts-style display-7">Create awesome websites!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image2 cid-qD7L1Qsgi2" id="image2-8" data-rv-view="385">
+
+    
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-figure-caption align-right">
+                <p class="mbr-text mbr-fonts-style display-7">Web pages and ads published in the AMP open-source format load near instantly, giving users a smooth, more engaging experience on mobile and desktop.</p>
+            </div>
+            <div class="image-block">
+                <amp-img src="assets/images/02.jpg" layout="responsive" width="360" height="240" alt="a sample image">
+                    
+                </amp-img>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image3 cid-qD7L2bgbX4" id="image3-9" data-rv-view="387">
+
+    
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="image-block">
+                <amp-img src="assets/images/01.jpg" layout="responsive" width="540" height="360" alt="a sample image">
+                    
+                </amp-img>
+            </div>
+            <div class="mbr-figure-caption align-left">
+                <p class="mbr-text mbr-fonts-style display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image4 cid-qD7L2ssQYZ" id="image4-a" data-rv-view="389">
+
+    
+
+    <div>
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6 first-image">
+                <div class="image-block">
+                    <amp-img src="assets/images/background4.jpg" layout="responsive" width="921" height="614" alt="a sample image">
+                        
+                    </amp-img>
+                </div>
+            </div>
+            <div class="mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6">
+                <div class="image-block">
+                    <amp-img src="assets/images/background4.jpg" layout="responsive" width="921" height="614" alt="a sample image">
+                        
+                    </amp-img>
+                </div>
+            </div>
+            <div class="mbr-figure-caption align-center">
+                <p class="mbr-text mbr-black mbr-fonts-style display-7">Create awesome web</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="youtube cid-qD7L2LWwO2" id="youtube-b" data-rv-view="391">
+
+    
+
+    <div>
+        <div class="video-block">
+            <amp-youtube width="480" height="270" layout="responsive" data-videoid="lBTCB7yLs8Y">
+            </amp-youtube>
+        </div>
+    </div>
+</section>
+
+<section class="vimeo cid-qD7L3d4YOg" id="vimeo-c" data-rv-view="393">
+
+    
+
+    <div>
+        <div class="video-block">
+            <amp-vimeo data-videoid="60855585" layout="responsive" width="16" height="9">
+            </amp-vimeo>
+        </div>
+    </div>
+</section>
+
+<section class="features1 mbr-section cid-qD7L3rn161" id="features1-d" data-rv-view="395">
+
+    
+    
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="card mbr-col-sm-12 mbr-col-md-6">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/background4.jpg" layout="responsive" width="330" height="220" alt="a card img">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Higher Perfomance</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Web pages and ads published in the AMP open-source format load near instantly, giving users a smooth, more engaging experience on mobile and desktop.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mbr-col-sm-12 mbr-col-md-6">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/02.jpg" layout="responsive" height="220" width="330" alt="a sample image">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Flexibility and Results</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="features2 mbr-section cid-qD7L3Qe224" id="features2-e" data-rv-view="397">
+
+    
+    
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/background4.jpg" layout="responsive" width="328" height="219" alt="a card img">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Perfomance</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Web pages and ads published in the AMP open-source format load near instantly, giving users a smooth, more engaging experience on mobile and desktop.</p>
+                        <div class="mbr-section-btn align-left">
+                            <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/01.jpg" layout="responsive" height="217" width="326" alt="a sample image">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Engagements</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+                        <div class="mbr-section-btn align-left">
+                            <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/02.jpg" layout="responsive" height="219" width="328" alt="a sample image">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Flexibility</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+                        <div class="mbr-section-btn align-left">
+                            <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/03.jpg" layout="responsive" height="217" width="326" alt="a sample image">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Resaults</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+                        <div class="mbr-section-btn align-left">
+                            <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="features3 mbr-section cid-qD7L4eyOUy" id="features3-f" data-rv-view="399">
+
+    
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-col-sm-12 mbr-col-md-6 row-item mbr-col-lg-4">
+                <div class="card card1">
+                    
+                    <p class="mbr-text mbr-fonts-style align-left mbr-white display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci, excepturi laboriosam neque quibusdam culpa. Aliquid, ullam debitis veniam similique ex, cupiditate dolor. Doloremque numquam deleniti doloribus quaerat natus nisi!</p>
+                    <div class="mbr-section-btn align-left">
+                         <a class="btn btn-sm btn-white display-4" href="https://mobirise.com">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mbr-col-sm-12 mbr-col-md-6 row-item mbr-col-lg-4">
+                <div class="card card2">
+                    
+                    <p class="mbr-text mbr-fonts-style align-left display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci, excepturi laboriosam neque quibusdam culpa. Aliquid, ullam debitis veniam similique ex, cupiditate dolor. Doloremque numquam deleniti doloribus quaerat natus nisi!</p>
+                    <div class="mbr-section-btn align-left">
+                         <a class="btn btn-sm btn-black display-4" href="https://mobirise.com">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mbr-col-sm-12 mbr-col-md-6 row-item mbr-col-lg-4">
+                <div class="card card3">
+                    
+                    <p class="mbr-text mbr-fonts-style align-left display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci, excepturi laboriosam neque quibusdam culpa. Aliquid, ullam debitis veniam similique ex, cupiditate dolor. Doloremque numquam deleniti doloribus quaerat natus nisi!</p>
+                    <div class="mbr-section-btn align-left">
+                         <a class="btn btn-sm btn-black display-4" href="https://mobirise.com">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="features4 cid-qD7L4FyoUH" id="features4-g" data-rv-view="401">
+
+    
+
+    <div>
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="image-block mbr-col-sm-12 mbr-col-md-8">
+                <amp-img src="assets/images/background4.jpg" layout="responsive" width="604" height="403" alt="a sample image">
+                    
+                </amp-img>
+            </div>
+            <div class="text-block mbr-col-sm-12 mbr-col-md-4 mbr-bold">
+                <h3 class="mbr-section-title mbr-fonts-style align-center display-2">Google AMP</h3>
+                <p class="mbr-fonts-style mbr-text align-center display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="mbr-section-btn align-center">
+                    <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features5 mbr-section cid-qD7L4SXWvy" id="features5-h" data-rv-view="403">
+
+    
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="card">
+                
+                <p class="mbr-text mbr-text1 mbr-fonts-style align-center display-5">The Accelerated Mobile Pages Project (AMP) is an online publishing format, originally created by<a href="https://mobirise.com" class="text-white">Google</a>as an alternative to Facebook’s Instant Articles. It’s a way to optimize web pages for mobile browsing using a special code–AMP-HTML.</p>
+                <p class="mbr-text2 mbr-text mbr-fonts-style align-center mbr-black display-7">According to Google, “The AMP Project is an open-source initiative aiming to make the web better for all. The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms.”</p>
+                <div class="mbr-section-btn align-center">
+                     <a class="btn btn-sm btn-black display-4" href="https://mobirise.com">VIEW FULL INFORMATION</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features7 cid-qD7L5hOHM1" id="features7-i" data-rv-view="405">
+
+    
+
+    <div class="container">
+        <div class="mbr-row justify-content-center">
+            <div class="image-block mbr-col-sm-12 mbr-col-md-8">
+                <amp-img src="assets/images/01.jpg" layout="responsive" width="450" height="300" alt="a sample image">
+                    
+                </amp-img>
+            </div>
+            <div class="text-block mbr-col-sm-12 mbr-col-md-4">
+                <h3 class="mbr-section-title mbr-fonts-style align-center display-2">Google AMP</h3>
+                <p class="mbr-fonts-style mbr-text align-center mbr-white display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="mbr-section-btn align-center">
+                    <a class="btn btn-sm btn-info display-4" href="https://mobirise.com">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features6 mbr-section cid-qD7L5tlYTe" id="features6-j" data-rv-view="407">
+
+    
+    
+    <div>
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/01.jpg" layout="responsive" width="461" height="307" alt="a card img">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Performance</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Web pages and ads published in the AMP open-source format load near instantly, giving users a smooth, more engaging experience on mobile and desktop.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/background4.jpg" layout="responsive" height="307" width="461" alt="a sample image">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Flexibility</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/02.jpg" layout="responsive" height="308" width="462" alt="a sample image">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-left display-2">Engagement</h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="features10 cid-qD7L5ZF0e8" id="features10-k" data-rv-view="409">
+
+    
+
+  <!--   <div mbr-class="{'container': fullWidth == false}">
+ -->        
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="image-block mbr-col-sm-12 mbr-col-md-6">
+                <amp-img src="assets/images/background3.jpg" layout="responsive" width="330" height="220" alt="a sample image">
+                    
+                </amp-img>
+            </div>
+            <div class="text-block mbr-col-sm-12 mbr-col-md-6">
+                <h3 class="mbr-section-title mbr-fonts-style align-left display-5">AMP FOR ADVERTISERS</h3>
+                <p class="mbr-fonts-style mbr-text align-left display-7">Conversions fall by 12% for every extra second a webpage takes to load. If you want people to engage with your brand and improve the performance of your campaigns, you have to speed things up. AMP offers a way for you to give users a faster experience everywhere -- on ads, landing pages or your entire website.</p>
+                <div class="mbr-section-btn align-left">
+                    <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features11 cid-qD7L6aLUAd" id="features11-l" data-rv-view="411">
+
+    
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-col-md-10">
+                <div class="section-header align-center">
+                    <span class="mbr-fonts-style num-title align-center display-1">57</span>
+                    
+                    <span class="mbr-fonts-style mbr-title align-center mbr-white display-2">COUNTRIES</span>
+                </div>
+        
+                <p class="mbr-fonts-style mbr-text mbr-white align-center display-5">Lorem ipsum (<a href="https://mobirise.com" class="text-secondary">dolor sit amet</a>), consectetur adipisicing elit. Dolorem officiis dolor commodi cumque reiciendis fugiat deleniti sapiente voluptatibus dignissimos quasi, quisquam cupiditate odio ratione, adipisci vel ut illo ex.</p>
+                
+                <div class="social-wrapper">
+                    <h4 class="mbr-fonts-style mbr-section-subtitle align-center display-7">SHARE THIS PAGE</h4>
+                    <amp-social-share type="email"></amp-social-share>
+                    <amp-social-share type="facebook" data-param-app_id="254325784911610"></amp-social-share>
+                    <amp-social-share type="gplus"></amp-social-share>
+                    <amp-social-share type="linkedin"></amp-social-share>
+                    <amp-social-share type="pinterest" data-param-media="https://ampbyexample.com/img/amp.jpg"></amp-social-share>
+                    <amp-social-share type="tumblr"></amp-social-share>
+                    <amp-social-share type="twitter"></amp-social-share>
+                </div>   
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features12 mbr-section cid-qD7L6lRTeU" id="features12-m" data-rv-view="413">
+
+    
+    
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="column first-column mbr-col-sm-12 mbr-col-md-6 card-pb">
+                
+
+                
+            <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <amp-img src="assets/images/background1.jpg" layout="responsive" width="265" height="177" alt="a card img">
+                                
+                            </amp-img>
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title card-title-fc mbr-fonts-style align-left display-2">Title 1</h4>
+                            <p class="mbr-text-fc mbr-fonts-style align-left display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio culpa nisi quasi, numquam voluptate accusantium, odit deleniti dicta eveniet iusto repellat aliquid asperiores itaque officiis ducimus eos quis similique.</p>
+                        </div>
+                    </div>
+                </div><div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <amp-img src="assets/images/background2.jpg" layout="responsive" width="265" height="177" alt="a card img">
+                                
+                            </amp-img>
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title card-title-fc mbr-fonts-style align-left display-2">Title 2</h4>
+                            <p class="mbr-text-fc mbr-fonts-style align-left display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis saepe dolorum, et, est voluptatum mollitia accusamus optio nostrum beatae facere laboriosam, placeat aliquam pariatur atque quisquam, aperiam ipsam.</p>
+                        </div>
+                    </div>
+                </div></div>
+            
+            <div class="column second-column mbr-col-sm-12 mbr-col-md-6">
+                
+
+                
+            <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <amp-img src="assets/images/background3.jpg" layout="responsive" height="176" width="264" alt="a sample image">
+                                
+                            </amp-img>
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title card-title-sc mbr-fonts-style align-left display-2">Title 3</h4>
+                            <p class="mbr-text-sc mbr-fonts-style align-left display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque libero corrupti cum reiciendis odio exercitationem, ex, magni iusto dolore in non, animi dolores, repellendus laudantium perferendis vitae aspernatur veniam expedita.</p>
+                        </div>
+                    </div>
+                </div><div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <amp-img src="assets/images/background4.jpg" layout="responsive" height="176" width="264" alt="a sample image">
+                                
+                            </amp-img>
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title card-title-sc mbr-fonts-style align-left display-2">Title 4</h4>
+                            <p class="mbr-text-sc mbr-fonts-style align-left display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia culpa laboriosam iure expedita quam libero quaerat! Nam quasi eveniet quas quaerat! Corporis veniam veritatis officiis saepe facilis, accusantium animi ducimus!</p>
+                        </div>
+                    </div>
+                </div></div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="features8 mbr-section cid-qD7L6L7PGq" id="features8-n" data-rv-view="425">
+
+    
+    
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="card mbr-col-sm-12 mbr-col-md-6">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/face1.jpg" layout="responsive" width="165" height="165" alt="a card img">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="mbr-fonts-style card-subtitle align-center display-4">DESIGNER</h4>
+                        <h3 class="card-title mbr-fonts-style align-center display-2">John Smith</h3>
+                        <div class="underline align-center">
+                             <div class="line"></div>
+                        </div>
+                        <p class="mbr-text mbr-fonts-style align-center display-7">Web pages and ads published in the AMP open-source format load near instantly, giving users a smooth, more engaging experience on mobile and desktop.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mbr-col-sm-12 mbr-col-md-6">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/face2.jpg" layout="responsive" height="165" width="165" alt="a sample image">
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="mbr-fonts-style card-subtitle align-center display-4">PHOTOGRAPHER</h4>
+                        <h3 class="card-title mbr-fonts-style align-center display-2">Amanda Adams</h3>
+                        <div class="underline align-center">
+                             <div class="line"></div>
+                        </div>
+                        <p class="mbr-text mbr-fonts-style align-center display-7">Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="features9 mbr-section cid-qD7L6UHOJr" id="features9-o" data-rv-view="427">
+
+    
+    
+    <div class="mbr-row mbr-justify-content-center">
+        <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <amp-img src="assets/images/face1.jpg" layout="responsive" width="213" height="213" alt="a card img">
+                        
+                    </amp-img>
+                </div>
+                <div class="card-box">
+                    <h4 class="mbr-fonts-style card-subtitle align-center display-4">DESIGNER</h4>
+                    <h3 class="card-title mbr-fonts-style align-center display-2">Adam Smith</h3>
+                    
+                    <p class="mbr-text mbr-fonts-style align-center display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <amp-img src="assets/images/face2.jpg" layout="responsive" height="213" width="213" alt="a sample image">
+                        
+                    </amp-img>
+                </div>
+                <div class="card-box">
+                    <h4 class="mbr-fonts-style card-subtitle align-center display-4">PHOTOGRAPHER</h4>
+                    <h3 class="card-title mbr-fonts-style align-center display-2">Amanda Adams</h3>
+                    
+                    <p class="mbr-text mbr-fonts-style align-center display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <amp-img src="assets/images/face3.jpg" layout="responsive" height="213" width="213" alt="a sample image">
+                        
+                    </amp-img>
+                </div>
+                <div class="card-box">
+                    <h4 class="mbr-fonts-style card-subtitle align-center display-4">DESIGNER</h4>
+                    <h3 class="card-title mbr-fonts-style align-center display-2">Adam Smith</h3>
+                    
+                    <p class="mbr-text mbr-fonts-style align-center display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam</p>
+                </div>
+            </div>
+        </div>
+        <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <amp-img src="assets/images/face4.jpg" layout="responsive" height="213" width="213" alt="a sample image">
+                        
+                    </amp-img>
+                </div>
+                <div class="card-box">
+                    <h4 class="mbr-fonts-style card-subtitle align-center display-4">PHOTOGRAPHER</h4>
+                    <h3 class="card-title mbr-fonts-style align-center display-2">Amanda Adams</h3>
+                    
+                    <p class="mbr-text mbr-fonts-style align-center display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="accordion cid-qD7L7eJaer" id="accordion-p" data-rv-view="429">
+
+    
+    
+    <div class="mbr-container">      
+        <amp-accordion class="accordion">
+          <section expanded="">
+            <h4 class="mbr-fonts-style mbr-bold display-2">AMP HTML</h4>
+            <p class="mbr-fonts-style display-7">Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</p>
+          </section>
+          <section>
+            <h4 class="mbr-fonts-style mbr-bold display-2">AMP JS</h4>
+            <p class="mbr-fonts-style display-7">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>
+          </section>
+          <section>
+            <h4 class="mbr-fonts-style mbr-bold display-2">AMP Cache</h4>
+            <p class="mbr-fonts-style display-7">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style mbr-bold display-2">AMP HTML</h4>
+            <p class="mbr-fonts-style display-7">AMP HTML is HTML with some restrictions for reliable performance.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style mbr-bold display-2">AMP JS</h4>
+            <p class="mbr-fonts-style display-7">The AMP JS library ensures the fast rendering of AMP HTML pages.</p>
+          </section>
+          <section class="super-hide">
+            <h4 class="mbr-fonts-style mbr-bold display-2">AMP Cache</h4>
+            <p class="mbr-fonts-style display-7">The Google AMP Cache can be used to serve cached AMP HTML pages.</p>
+          </section>
+        </amp-accordion>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-qD7L83EqKL" id="content1-q" data-rv-view="431">
+
+    
+
+    <div class="mbr-container">
+        <h2 class="mbr-section-title align-center mbr-fonts-style mbr-bold display-1">Article Title with Solid Background</h2>
+        <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
+            <em>Shape your future web project with sharp design and refine coded functions.</em>
+        </h3>
+        
+    </div>
+</section>
+
+<section class="mbr-section content8 cid-qD7L8ic1Jx" id="content8-r" data-rv-view="433">
+     
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="card mbr-col-md-7">
+                <h2 class="mbr-section-title align-center mbr-fonts-style mbr-bold display-1">Article Title with Solid Background</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-fonts-style display-7">Article Title with Solid Background</h3>
+            </div>
+            <div class="card mbr-col-md-5">
+                <div class="mbr-text mbr-fonts-style display-7">
+                    <blockquote>Make your own website in a few clicks! Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools<a href="https://mobirise.com/">available</a>today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</blockquote>
+                </div>
+            </div>
+        </div>
+</div></section>
+
+<section class="content2 mbr-section article cid-qD7L8wjlyi" id="content2-s" data-rv-view="435">
+    
+     
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8">
+                <h3 class="mbr-fonts-style mbr-section-title display-2">Free Website Builder</h3>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    <strong>Make your own website in a few clicks!</strong>Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and<em>mobile friendly websites</em>in a few clicks. Mobirise is one of the easiest website development tools<a href="https://mobirise.com/">available</a>today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content3 mbr-section article cid-qD7L8PqJiX" id="content3-t" data-rv-view="437">
+
+     
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-text mbr-fonts-style mbr-col-sm-12 mbr-col-md-8 mbr-col-xl-7 display-7">
+                <p>
+                    <em>Make your own website in a few clicks! Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.<a href="https://mobirise.com/">Learn more.</a></em>
+                </p>
+            </div>
+            <div class="signature mbr-col-sm-12 mbr-col-md-8 mbr-col-xl-7 mbr-fonts-style display-7">— Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+    </div>
+</section>
+
+<section class="content4 mbr-section article cid-qD7L919e61" id="content4-u" data-rv-view="439">
+    
+     
+
+    <div class="container">
+        <div class="mbr-text align-center mbr-fonts-style display-2">Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</div>
+    </div>
+</section>
+
+<section class="mbr-section cid-qD7L9ekRFf" id="content7-v" data-rv-view="440">
+     
+
+    <div class="mbr-container">
+        <div class="mbr-text counter-container mbr-fonts-style display-7">
+            <ul>
+                <li><strong>MOBILE FRIENDLY</strong>- o special actions required, all sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site, it will adapt automagically.<a href="https://mobirise.com/">Try it now!</a></li>
+                <li><strong>EASY AND SIMPLE</strong>- cut down the development time with drag-and-drop website builder. Drop the blocks into the page, edit content inline and publish - no technical skills required.<a href="https://mobirise.com/">Try it now!</a></li>
+                <li><strong>UNIQUE STYLES</strong>- choose from the large selection of latest pre-made blocks - full-screen intro, bootstrap carousel, content slider, responsive image gallery with lightbox, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.<a href="https://mobirise.com/">Try it now!</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section cid-qD7L9IdwSB" id="content9-w" data-rv-view="441">
+     
+
+    <div class="mbr-container">
+        <div class="mbr-text counter-container mbr-fonts-style display-7">
+            <ol>
+                <li><strong>MOBILE FRIENDLY</strong>- o special actions required, all sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version of your site, it will adapt automagically.<a href="https://mobirise.com/">Try it now!</a></li>
+                <li><strong>EASY AND SIMPLE</strong>- cut down the development time with drag-and-drop website builder. Drop the blocks into the page, edit content inline and publish - no technical skills required.<a href="https://mobirise.com/">Try it now!</a></li>
+                <li><strong>UNIQUE STYLES</strong>- choose from the large selection of latest pre-made blocks - full-screen intro, bootstrap carousel, content slider, responsive image gallery with lightbox, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.<a href="https://mobirise.com/">Try it now!</a></li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section cid-qD7L9UBNsC" id="content13-x" data-rv-view="442">
+     
+
+    <div class="mbr-container">
+        <div class="mbr-text counter-container mbr-fonts-style display-7">
+            <ol>
+                <li><strong>Higher Performance and Engagement.</strong>Web pages and ads published in the AMP open-source format load near instantly, giving users a smooth, more engaging experience on mobile and desktop.<a class="text-secondary" href="https://mobirise.com">Read More...</a></li>
+                <li><strong>Flexibility and Results.</strong>Publishers and advertisers can decide how to present their content and what technology vendors to use, all while maintaining and improving key performance indicators.<a class="text-secondary" href="https://mobirise.com">Read More...</a></li>
+                <li><strong>A collaborative effort.</strong>AMP is built thanks to a deep collaboration with thousands of developers, publishers and websites, distribution platforms and tech companies. More than 1.5B AMP pages have been published to date and 100+ leading analytics, ad tech and CMS providers support the AMP format.<a class="text-secondary" href="https://mobirise.com">Read More...</a></li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section cid-qD7Lai12OU" id="content5-y" data-rv-view="443">
+
+    
+
+    <div class="mbr-container">
+        <div class="mbr-section-btn align-center">
+            <a class="btn btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
+            <a class="btn btn-black-outline display-4" href="https://mobirise.com">LIVE DEMO</a>
+        </div>
+    </div>
+</section>
+
+<section class="content10 mbr-section article cid-qD7LaQd8LW" id="content10-z" data-rv-view="444">
+
+     
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-text mbr-fonts-style mbr-col-sm-12 mbr-col-md-8 display-5">
+                <blockquote>Make your own website in a few clicks! Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. Mobirise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.<a href="https://mobirise.com/"><em>Learn more.</em></a></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content11 mbr-section article cid-qD7Lb258eX" id="content11-10" data-rv-view="445">
+    
+     
+
+    <div class="container">
+        <div class="mbr-text align-center mbr-fonts-style mbr-col-sm-12 mbr-col-md-8 display-5">Mobirise is one of the easiest website development tools available today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</div>
+    </div>
+</section>
+
+<section class="content12 mbr-section cid-qD7LbevPzR" id="content12-11" data-rv-view="446">
+
+    
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="mbr-col-sm-12 mbr-col-md-10">
+                <h4 class="mbr-fonts-style mbr-section-title align-center mbr-white display-2">What is AMP?</h4>
+                <p class="mbr-text mbr-fonts-style align-center mbr-white display-5">The Accelerated Mobile Pages Project (AMP) is an online publishing format, originally created by<a href="https://mobirise.com" class="text-black">Google</a>as an alternative to Facebook’s Instant Articles. It’s a way to optimize web pages for mobile browsing using a special code–AMP-HTML.</p>
+                <div class="mbr-section-btn align-center">
+                    <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.com">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content14 mbr-section cid-qD7LbEKgDK" id="content14-12" data-rv-view="448">
+
+    
+    
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="first-card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-5">
+                
+                <p class="mbr-first-text mbr-section-title mbr-fonts-style align-right mbr-white display-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores cum libero odio nihil, aperiam iure accusantium veritatis magnam, perspiciatis voluptatibus illo culpa obcaecati porro quasi placeat repellat impedit sequi. Dolor.</p>
+            </div>
+            
+            <div class="second-card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-5">
+                
+                <p class="mbr-second-text mbr-text mbr-fonts-style align-left mbr-black mbr-bold display-7">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad cum eligendi molestias. Magnam, voluptate totam sunt tempore iusto ipsa repellendus ipsam ipsum, commodi non. Adipisci neque hic asperiores, ex.</span><span>Minus dicta quidem voluptatum fuga, at praesentium vero molestias, quia quaerat natus, consectetur blanditiis qui saepe eveniet eius. Fugit laboriosam officia est maxime accusamus autem architecto eveniet tempore, consequuntur animi.</span>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="social-share cid-qD7LcqqGAB" id="social-share-13" data-rv-view="450">
 
     
 
@@ -1685,7 +3673,73 @@ section.sidebar-open:before {
         <amp-social-share type="pinterest" data-param-media="https://ampbyexample.com/img/amp.jpg"></amp-social-share>
         <amp-social-share type="tumblr"></amp-social-share>
         <amp-social-share type="twitter"></amp-social-share>
-        <amp-social-share type="whatsapp"></amp-social-share>
+    </div>
+</section>
+
+<section class="footer2 cid-qD7Ld32XxC" id="footer2-15" data-rv-view="452">
+
+    
+
+    <div class="container">
+        <div class="mbr-row mbr-justify-content-center">
+            <div class="items-col mbr-col-sm-12 mbr-col-md-3 mbr-col-lg-2">
+                <h3 class="mbr-fonts-style group-title mbr-bold display-5">New</h3>
+                <div class="items">
+                    
+                    
+                    
+                <p class="item mbr-fonts-style display-7">Item 1</p><p class="item mbr-fonts-style display-7">Item 2</p><p class="item mbr-fonts-style display-7">Item 3</p></div>
+            </div>
+
+            <div class="items-col mbr-col-sm-12 mbr-col-md-3 mbr-col-lg-2">
+                <h3 class="mbr-fonts-style group-title mbr-bold display-5">Mobirise</h3>
+                <div class="items">
+                    
+                    
+                    
+                <p class="item mbr-fonts-style display-7">Item 1</p><p class="item mbr-fonts-style display-7">Item 2</p><p class="item mbr-fonts-style display-7">Item 3</p></div>
+            </div>
+
+            <div class="items-col mbr-col-sm-12 mbr-col-md-3 mbr-col-lg-2">
+                <h3 class="mbr-fonts-style group-title mbr-bold display-5">Theme</h3>
+                <div class="items">
+                    
+                    
+                    
+                <p class="item mbr-fonts-style display-7">Item 1</p><p class="item mbr-fonts-style display-7">Item 2</p><p class="item mbr-fonts-style display-7">Item 3</p></div>
+            </div>
+
+            <div class="items-col mbr-col-sm-12 mbr-col-md-3 mbr-col-lg-2">
+                <h3 class="mbr-fonts-style group-title mbr-bold display-5">Valid</h3>
+                <div class="items">
+                    
+                    
+                    
+                <p class="item mbr-fonts-style display-7">Item 1</p><p class="item mbr-fonts-style display-7">Item 2</p><p class="item mbr-fonts-style display-7">Item 3</p></div>
+            </div>
+
+            <div class="items-col mbr-col-sm-12 mbr-col-md-3 mbr-col-lg-2">
+                <h3 class="mbr-fonts-style group-title mbr-bold display-5">Google AMP</h3>
+                <div class="items">
+                    
+                    
+                    
+                <p class="item mbr-fonts-style display-7">Item 1</p><p class="item mbr-fonts-style display-7">Item 2</p><p class="item mbr-fonts-style display-7">Item 3</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cid-qD7LcMd3yW" id="footer1-14" data-rv-view="489">
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">© Copyright 2017 Mobirise - All Rights Reserved</p>
+            </div>
+        </div>
     </div>
 </section>
 
