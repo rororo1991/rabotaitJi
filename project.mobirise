@@ -1,36 +1,34 @@
 {
   "settings": {
-    "name": "Site-12-18_1334",
+    "name": "Site-12-18_1333",
     "currentPage": "index.html",
     "theme": {
-      "name": "mobirise4",
-      "title": "Mobirise 4",
+      "name": "blackamp",
+      "title": "BlackAMP",
       "styling": {
-        "primaryColor": "#149dcc",
-        "secondaryColor": "#ff3366",
-        "successColor": "#F7ED4A",
-        "infoColor": "#82786E",
-        "warningColor": "#879A9F",
-        "dangerColor": "#B1A374",
-        "mainFont": "Rubik",
-        "display1Font": "Rubik",
-        "display1Size": 4.25,
-        "display2Font": "Rubik",
-        "display2Size": 3,
-        "display5Font": "Rubik",
-        "display5Size": 1.5,
-        "display7Font": "Rubik",
-        "display7Size": 1,
-        "display4Font": "Rubik",
-        "display4Size": 1,
-        "isRoundedButtons": true,
-        "isAnimatedOnScroll": false,
-        "isScrollToTopButton": false
+        "primaryColor": "#dd4f39",
+        "secondaryColor": "#ffde00",
+        "successColor": "#b2ccd2",
+        "infoColor": "#75818d",
+        "warningColor": "#767676",
+        "dangerColor": "#879A9F",
+        "mainFont": "Source Sans Pro",
+        "display1Font": "Tinos",
+        "display1Size": 4.5,
+        "display2Font": "Tinos",
+        "display2Size": 2.2,
+        "display5Font": "Source Sans Pro",
+        "display5Size": 1.8,
+        "display7Font": "Source Sans Pro",
+        "display7Size": 1.1,
+        "display4Font": "Source Sans Pro",
+        "display4Size": 0.95,
+        "isRoundedButtons": false
       }
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.5.1",
-    "uniqCompNum": 2,
+    "uniqCompNum": 3,
     "versionPublish": "4.5.1"
   },
   "pages": {
@@ -56,31 +54,68 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".mbr-figure": {
-              "margin": "0 auto",
-              "width": "100%",
-              "display": "flex",
-              "justify-content": "center",
-              "img": {
-                "height": "100%"
-              }
+            ".mbr-section-btn": {
+              "margin-bottom": "20px"
             },
-            "@media (max-width: 991px)": {
-              ".mbr-figure": {
-                "img": {
-                  "width": "100% !important"
-                }
-              }
+            "amp-img": {
+              "width": "100%",
+              "text-align": "center",
+              "margin": "0 auto",
+              "max-width": "~'@{imageWidth}%'"
             }
           },
-          "_name": "header4",
-          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"60\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#5c698e\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"media-content col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">INTRO WITH IMAGE</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">Beautiful mobile websites</h3>\n                <div class=\"mbr-text align-center mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\">Intro with background image, color overlay and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.</p>\n                </div>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n            <div class=\"mbr-figure pt-5\">\n                <img src=\"@PROJECT_PATH@/assets/images/mbr-1619x1080.jpg\" alt=\"Mobirise\" mbr-style=\"{'width': mediaSize + '%'}\" title>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qE9B9g04h7",
+          "_name": "header2",
+          "_customHTML": "<section class=\"header2\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Image Width\" name=\"imageWidth\" min=\"0\" max=\"100\" step=\"1\" value=\"50\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f1f1f1\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Mobirise AMP</h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-5\">ACCELERATED MOBILE PAGES BY GOOGLE</h3>\n        <div class=\"mbr-text align-center\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod at id fugiat natus a voluptas eveniet officia iure nihil nostrum ad, modi ipsam, dicta ullam accusamus, voluptate aspernatur. Accusamus, aliquid?</p>\n        </div>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n        </div>\n\n        <amp-img src=\"@PROJECT_PATH@/assets/images/mbr-1-1620x1080.jpg\" alt=\"a sample image\" width=\"555\" height=\"370\" layout=\"responsive\">\n            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1-1620x1080.jpg\" alt=\"Mobirise\" title=\"\">\n        </amp-img>\n    </div>\n\n</section>",
+          "_cid": "qE9AQNo8RR",
+          "_anchor": "header2-1",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "header4-1"
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".image-block": {
+              "width": "~\"@{videoSize}%\"",
+              "margin": "auto"
+            },
+            ".mbr-figure-caption": {
+              "width": "~\"@{textSize}%\""
+            },
+            ".first-image": {
+              "@media (max-width: 991px)": {
+                "margin-bottom": "2rem"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            },
+            ".mbr-text": {
+              "padding": "1rem !important",
+              "margin": "0"
+            },
+            "amp-img": {
+              "text-align": "center"
+            },
+            "@media (max-width: 767px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "image4",
+          "_customHTML": "<section class=\"image4\" group=\"Images & Videos\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"1\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"50\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Text Block Width\" name=\"textSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\" checked>\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6 first-image\">\n                <div class=\"image-block\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/mbr-1683x1080.jpg\" layout=\"responsive\" width=\"590\" height=\"378\" alt=\"a sample image\">\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1683x1080.jpg\" alt=\"Mobirise\" title>\n                    </amp-img>\n                </div>\n            </div>\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n                <div class=\"image-block\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/mbr-1622x1080.jpg\" layout=\"responsive\" width=\"590\" height=\"393\" alt=\"a sample image\">\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1622x1080.jpg\" alt=\"Mobirise\" title>\n                    </amp-img>\n                </div>\n            </div>\n            <div class=\"mbr-figure-caption align-center\" mbr-if=\"showText\">\n                <p mbr-text class=\"mbr-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Create awesome web</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qEa5Z0A9gk",
+          "_anchor": "image4-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "_styles": {
@@ -88,21 +123,21 @@
               "padding-top": "(@paddingTop * 15px)",
               "padding-bottom": "(@paddingBottom * 15px)"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             }
           },
-          "_name": "header2",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\" parallax=\"\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#767676\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">FULL SCREEN INTRO</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">Beautiful mobile websites</h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Click any text to edit or style it. Select text to insert a link. Click blue \"Gear\" icon in the top right corner to hide/show buttons, text, title and change the block background. Click red \"+\" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add themes.</p>\n                <div mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>\n",
-          "_cid": "qE9B8ZbAIz",
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1591x1080.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#886586\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">Google AMP</h1>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubTitle\">AMP PROVIDES A GREAT USER EXPERIENCE ACROSS MANY PLATFORMS</h3>\n        <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">Full width intro with adjustable height, background image. Click any text to edit or style it.</p>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "qE9AQ4Lz8L",
+          "_anchor": "header1-0",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "header2-0"
+          "_params": {}
         }
       ]
     }
