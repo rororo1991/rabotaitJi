@@ -6,7 +6,7 @@
         var e = document.createElement("section");
         e.id = "top-1";
         e.className = "engine";
-        e.innerHTML = '<a href="https://mobirise.info">Mobirise</a> Mobirise v4.5.1';
+        e.innerHTML = '<a href="https://mobirise.me">Mobirise</a> Mobirise v4.7.0';
         document.body.insertBefore(e, document.body.childNodes[0]);
     }
 }();
@@ -988,8 +988,7 @@
             $('.mbr-slider.carousel').each(function(){
                 var $slider = $(this),
                     controls = $slider.find('.carousel-control'),
-                    indicators = $slider.find('carousel-indicators li');
-
+                    indicators = $slider.find('.carousel-indicators li');
                 $slider.on('slide.bs.carousel', function () {
                     controls.bind('click',function(event){
                         clickPrev(event);
