@@ -403,7 +403,8 @@ nav .mbr-section-btn {
   -webkit-animation: gradient-animation 5s infinite alternate; }
 
 .menu .navbar-brand {
-  display: -webkit-flex; }
+  display: -webkit-flex;
+  display: flex; }
   .menu .navbar-brand span {
     display: flex;
     display: -webkit-flex; }
