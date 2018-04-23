@@ -32,12 +32,13 @@
     "favicon": "",
     "noImageResize": "",
     "google-analytics": "",
-    "cookiesAlert": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
+    "cookiesAlert": "",
     "gdpr": "By continiung you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>.",
     "siteUrl": "undefined",
     "versionFirst": "4.7.0",
-    "uniqCompNum": 2,
-    "versionPublish": "4.7.0"
+    "uniqCompNum": 3,
+    "versionPublish": "4.7.0",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -50,6 +51,44 @@
         "html_before": ""
       },
       "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "& when (@showTitle)": {
+              ".mbr-title": {
+                "padding-top": "1.5rem",
+                "padding-bottom": "1.5rem"
+              }
+            },
+            ".amp-iconfont": {
+              "padding": "1.5rem",
+              "margin": "auto",
+              "color": "@iconsColor",
+              "font-size": "~\"@{iconsSize}rem\""
+            }
+          },
+          "_name": "features1",
+          "_customHTML": "<section class=\"mbr-section features1\" group=\"Features\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen':fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"!fullScreen\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"!fullScreen\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"3\" max=\"15\" step=\"0.1\" value=\"9\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffb1b1\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Author\" name=\"showAuthor\" checked>\n    \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f5edf6\" selected>\n        </fieldset>\n    \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f5edf6\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container align-center\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-md-10 mbr-col-lg-8\">\n                <div class=\"icon-wrap\">\n                    <span mbr-icon mbr-if=\"showIcons\" class=\"amp-iconfont fa-inbox fa\"></span>\n                </div>\n                <h2 class=\"mbr-title mbr-fonts-style mbr-bold mbr-black\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title, .icon-wrap\">\n                    All Order Over $75 Ship Free\n                </h2>\n                <p mbr-if=\"showText\" data-app-selector=\".block-text\" class=\"mbr-text mbr-fonts-style mbr-black block-text\" mbr-theme-style=\"display-6\">\n                    “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestiae error, ad corporis vel dolores molestias architecto exercitationem fugit ipsa, explicabo vero nam incidunt dicta, repudiandae non quod aut animi!“\n                </p>\n                <h3 mbr-if=\"showAuthor\" data-app-selector=\".block-subtext\" class=\"mbr-text mbr-fonts-style mbr-black block-subtext\" mbr-theme-style=\"display-7\">\n                    – Mobirise.\n                </h3>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qPLXOXvaB1",
+          "_anchor": "features1-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
         {
           "_styles": {
             "& when not (@fullScreen)": {
