@@ -1372,19 +1372,6 @@ body {
 .dropup .dropdown-toggle::after {
   display: none;
 }
-.cid-qQdECWRGL9 {
-  background-image: url("../../../assets/images/02.jpg");
-}
-.cid-qQdECWRGL9 .form-container {
-  transition: all .2s;
-  border: 1px solid #ffffff;
-  padding: 1rem;
-}
-.cid-qQdECWRGL9 .input-group-btn {
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  .cid-qQdECWRGL9 .content-container {
-    padding-right: 5rem;
-  }
+.cid-qQZosXxSJv {
+  background-image: url("../../../assets/images/jumbotron.jpg");
 }
